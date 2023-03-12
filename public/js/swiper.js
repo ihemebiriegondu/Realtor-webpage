@@ -29,6 +29,17 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
+const handleNext = () => {
+    swiper.slideNext();
+}
+
+const handlePrev = () => {
+    swiper.slidePrev();
+}
+
+let next = document.querySelector('#mynext')
+next.addEventListener('click', handleNext)
+
 const swiper2 = new Swiper('.swiper2', {
     // Optional parameters
     direction: 'horizontal',
@@ -60,13 +71,13 @@ const swiper2 = new Swiper('.swiper2', {
     }
 });
 
-const handleNext = () => {
-    swiper.slideNext();
-}
+const swiper4 = new Swiper('.swiper4', {
+    direction: 'horizontal',
+    loop: false,
 
-const handlePrev = () => {
-    swiper.slidePrev();
-}
-
-let next = document.querySelector('#mynext')
-next.addEventListener('click', handleNext)
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    }
+});
