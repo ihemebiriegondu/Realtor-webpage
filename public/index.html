@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="/public/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/global.css">
+    <title>Realtor</title>
+</head>
+
+<body>
+    <header class="bg-[url('./images/bg.png')] bg-cover pt-[21px] pb-[75.5px]">
+        <nav class="text-white flex items-center justify-between mb-[130px]">
+            <div class="flex items-center">
+                <img src="./images/icon.png" alt="">
+                <h3 class="mb-0 text-[22px] font-semibold ml-[10px]">homez</h3>
+            </div>
+            <div>
+                <ul class="flex text-sm font-semibold">
+                    <li><a href="" class="mr-8">Home</a></li>
+                    <li><a href="" class="mr-8">Listing</a></li>
+                    <li><a href="" class="mr-8">Property</a></li>
+                    <li><a href="" class="mr-8">Blog</a></li>
+                    <li><a href="">Pages</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center">
+                <div class="flex items-center mr-5">
+                    <img src="./images/user (1) 1.png" class="mr-[10px] w-[18px] h-[18px]" alt="">
+                    <p class="text-sm font-semibold">Login / Register</p>
+                </div>
+                <button
+                    class="flex items-center mr-[25px] border border-1 border-white rounded-[12px] py-[13px] px-[25px]">
+                    <p class="mr-[10px] text-sm font-semibold">Add Property</p>
+                    <img src="./images/Group.png" alt="">
+                </button>
+                <div>
+                    <img src="./images/nav-icon.png" alt="">
+                </div>
+            </div>
+        </nav>
+
+        <div class="mb-16 text-white">
+            <h1 class="mb-[10px] text-[46px] font-semibold">Find the perfect place to <br> Live with your family</h1>
+            <p class="text-[15px]">Let’s find a home that’s perfect for you</p>
+        </div>
+
+        <div class="bg-white">
+            <div class="flex">
+                <p class="mr-[27px] px-2">Buy</p>
+                <p>Rent</p>
+                <p>Sold</p>
+            </div>
+            <div>
+                <div>
+                    <img src="./images/home (2) 1.png" alt="">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </header>
+    <h1 class="text-3xl font-bold underline">
+        Hello world!
+    </h1>
+    <div class="swiper w-11/12 h-[300px]">
+        <div class="flex justify-between content-center w-1/6 mx-auto">
+            <button id="myprev"
+                class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
+                    <path fill-rule="evenodd"
+                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="swiper-pagination my-auto w-auto static" style="width: auto;">
+            </div>
+            <button id="mynext"
+                class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+                <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
+                    <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="swiper-wrapper bg-black">
+            <div class="swiper-slide bg-yellow-400">Slide 1</div>
+            <div class="swiper-slide bg-red-400">Slide 2</div>
+            <div class="swiper-slide bg-blue-400">Slide 3</div>
+            <div class="swiper-slide bg-yellow-400">Slide 4</div>
+            <div class="swiper-slide bg-red-400">Slide 5</div>
+            <div class="swiper-slide bg-blue-400">Slide 6</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></scri
