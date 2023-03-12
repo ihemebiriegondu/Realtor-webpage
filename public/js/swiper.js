@@ -81,3 +81,34 @@ const swiper4 = new Swiper('.swiper4', {
         clickable: true
     }
 });
+
+const swiper5 = new Swiper('.swiper5', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+
+    slidesPerView: 1,
+    //slidesPerView: 1.5,
+    spaceBetween: 30,
+
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
+    },
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    }
+});
