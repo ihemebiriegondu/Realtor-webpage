@@ -71,6 +71,20 @@ const swiper2 = new Swiper('.swiper2', {
     }
 });
 
+const swiper3 = new Swiper('.swiper3', {
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+    freeMode: false,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+    },
+    speed: 3000,
+    slidesPerView: 5,
+    spaceBetween: 30,
+});
+
 const swiper4 = new Swiper('.swiper4', {
     direction: 'horizontal',
     loop: false,
