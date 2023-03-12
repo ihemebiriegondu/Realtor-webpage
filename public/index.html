@@ -23,11 +23,11 @@
                 </a>
                 <div>
                     <ul class="flex text-sm font-semibold">
-                        <li><a href="" class="mr-8">Home</a></li>
-                        <li><a href="" class="mr-8">Listing</a></li>
-                        <li><a href="" class="mr-8">Property</a></li>
-                        <li><a href="" class="mr-8">Blog</a></li>
-                        <li><a href="">Pages</a></li>
+                        <li class="px-2 mx-2"><a href="" class="">Home</a></li>
+                        <li class="px-2 mx-2 pb-[11px] border-b-2 border-white"><a href="" class="">Listing</a></li>
+                        <li class="px-2 mx-2"><a href="" class="">Property</a></li>
+                        <li class="px-2 mx-2"><a href="" class="">Blog</a></li>
+                        <li class="px-2 mx-2"><a href="">Pages</a></li>
                     </ul>
                 </div>
                 <div class="flex items-center">
@@ -54,7 +54,9 @@
 
             <div class="mb-[30px]">
                 <div class="flex bg-white w-fit rounded-t-[12px] pt-4 px-8">
-                    <p class="mr-[27px] px-2 text-sm font-semibold cursor-pointer pb-[14px] border-b-2 border-[#181A20]">Buy</p>
+                    <p
+                        class="mr-[27px] px-2 text-sm font-semibold cursor-pointer pb-[14px] border-b-2 border-[#181A20]">
+                        Buy</p>
                     <p class="mr-[27px] px-2 text-sm font-semibold cursor-pointer text-[#717171]">Rent</p>
                     <p class="mr-[27px] px-2 text-sm font-semibold cursor-pointer text-[#717171]">Sold</p>
                 </div>
@@ -99,40 +101,292 @@
             </div>
         </div>
     </header>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-    <div class="swiper w-11/12 h-[300px]">
-        <div class="flex justify-between content-center w-1/6 mx-auto">
-            <button id="myprev"
-                class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
-                <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
-                    <path fill-rule="evenodd"
-                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </button>
-            <div class="swiper-pagination my-auto w-auto static" style="width: auto;">
-            </div>
-            <button id="mynext"
-                class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
-                <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
-                    <path fill-rule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </button>
-        </div>
 
-        <div class="swiper-wrapper bg-black">
-            <div class="swiper-slide bg-yellow-400">Slide 1</div>
-            <div class="swiper-slide bg-red-400">Slide 2</div>
-            <div class="swiper-slide bg-blue-400">Slide 3</div>
-            <div class="swiper-slide bg-yellow-400">Slide 4</div>
-            <div class="swiper-slide bg-red-400">Slide 5</div>
-            <div class="swiper-slide bg-blue-400">Slide 6</div>
-        </div>
-    </div>
+    <main>
+        <section class="my-[120px] grid grid-cols-2 gap-[30px] w-10/12 mx-auto">
+            <div class="rounded-[12px] bg-primary/[.07] flex justify-between pt-[60px] pl-[60px] relative">
+                <div class="">
+                    <h6 class="text-[22px] font-semibold mb-[10px]">The New Way to Find <br> Your Home</h6>
+                    <p class="text-[15px] mb-[26px]">From as low as $10 per day with <br> limited time offer discounts.
+                    </p>
+                    <button class="bg-primary py-4 px-[30px] flex items-center rounded-[12px] text-white">
+                        <p class="text-[15px] font-semibold mr-[10px]">How İt Works</p>
+                        <img src="./images/Group.png" alt="">
+                    </button>
+                </div>
+                <div class="absolute bottom-0 right-0">
+                    <img src="./images/g10.png" class="" alt="">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 grid-rows-2 gap-[30px]">
+                <div class="border border-[#DDDDDD] rounded-[12px] px-[30px] py-[43px] relative">
+                    <img src="./images/search 1.png" alt=""
+                        class="w-[40px] h-[40px] absolute top-[20px] right-[20px] left-auto">
+                    <h5 class="text-primary text-[28px] font-semibold">01</h5>
+                    <h6 class="text-[15px] font-semibold mb-[10px]">Search Your Dream Home</h6>
+                    <p class="text-[13px]">Get ready to launch your real estate website without...</p>
+                </div>
+                <div class="border border-[#DDDDDD] rounded-[12px] px-[30px] py-[43px] relative">
+                    <img src="./images/chat 2.png" alt=""
+                        class="w-[40px] h-[40px] absolute top-[20px] right-[20px] left-auto">
+                    <h5 class="text-primary text-[28px] font-semibold">02</h5>
+                    <h6 class="text-[15px] font-semibold mb-[10px]">Choose The House You Like</h6>
+                    <p class="text-[13px]">Get ready to launch your real estate website without...</p>
+                </div>
+                <div class="border border-[#DDDDDD] rounded-[12px] px-[30px] py-[43px] relative">
+                    <img src="./images/bird-house (1) 1.png" alt=""
+                        class="w-[40px] h-[40px] absolute top-[20px] right-[20px] left-auto">
+                    <h5 class="text-primary text-[28px] font-semibold">03</h5>
+                    <h6 class="text-[15px] font-semibold mb-[10px]">Enquire About This Property</h6>
+                    <p class="text-[13px]">Get ready to launch your real estate website without...</p>
+                </div>
+                <div class="border border-[#DDDDDD] rounded-[12px] px-[30px] py-[43px] relative">
+                    <img src="./images/house (1) 1.png" alt=""
+                        class="w-[40px] h-[40px] absolute top-[20px] right-[20px] left-auto">
+                    <h5 class="text-primary text-[28px] font-semibold">04</h5>
+                    <h6 class="text-[15px] font-semibold mb-[10px]">Own Your Home</h6>
+                    <p class="text-[13px]">Get ready to launch your real estate website without...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="swiper">
+            <div class="mb-[60px] w-10/12 mx-auto flex items-baseline justify-between">
+                <div>
+                    <h3 class="text-[30px] font-semibold">Discover Our Featured Listings</h3>
+                    <p class="text-sm">Aliquam lacinia diam quis lacus euismod</p>
+                </div>
+                <div class="flex justify-between items-center w-1/6 mx-auto">
+                    <div>
+                        <img src="./images/arrow-right.png" alt="" id="myprev" class="cursor-pointer">
+                    </div>
+                    <div class="swiper-pagination my-auto w-auto static" style="width: auto;"></div>
+                    <div>
+                        <img src="./images/arrow-right (1).png" alt="" id="mynext" class="cursor-pointer">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-wrapper w-10/12 mx-auto">
+                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                    <div class="h-[240px] relative">
+                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                        <div
+                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
+                            <img src="./images/Vector (7).png" alt="" class="">
+                            <p class="text-xs ml-[7.44px]">FEATURED</p>
+                        </div>
+                        <div
+                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
+                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
+                        </div>
+                    </div>
+                    <div class="pt-5 pb-4 px-5">
+                        <div class="mb-[15px]">
+                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                            <p class="text-[13px]">California City, CA, USA</p>
+                        </div>
+                        <div class="flex items-center mb-[15px]">
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">3 bed</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">4 bath</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">1200 sqft</span>
+                            </p>
+                        </div>
+                        <hr class="h-px mb-[17px]">
+                        <div class="flex items-center justify-between">
+                            <p class="text-[13px]">For Rent</p>
+                            <div class="flex items-center">
+                                <img src="./images/save (2).png" alt="">
+                                <img src="./images/save.png" alt="">
+                                <img src="./images/save (1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                    <div class="h-[240px] relative">
+                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                    </div>
+                    <div class="pt-5 pb-4 px-5">
+                        <div class="mb-[15px]">
+                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                            <p class="text-[13px]">California City, CA, USA</p>
+                        </div>
+                        <div class="flex items-center mb-[15px]">
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">3 bed</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">4 bath</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">1200 sqft</span>
+                            </p>
+                        </div>
+                        <hr class="h-px mb-[17px]">
+                        <div class="flex items-center justify-between">
+                            <p class="text-[13px]">For Rent</p>
+                            <div class="flex items-center">
+                                <img src="./images/save (2).png" alt="">
+                                <img src="./images/save.png" alt="">
+                                <img src="./images/save (1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                    <div class="h-[240px] relative">
+                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                    </div>
+                    <div class="pt-5 pb-4 px-5">
+                        <div class="mb-[15px]">
+                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                            <p class="text-[13px]">California City, CA, USA</p>
+                        </div>
+                        <div class="flex items-center mb-[15px]">
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">3 bed</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">4 bath</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">1200 sqft</span>
+                            </p>
+                        </div>
+                        <hr class="h-px mb-[17px]">
+                        <div class="flex items-center justify-between">
+                            <p class="text-[13px]">For Rent</p>
+                            <div class="flex items-center">
+                                <img src="./images/save (2).png" alt="">
+                                <img src="./images/save.png" alt="">
+                                <img src="./images/save (1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                    <div class="h-[240px] relative">
+                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                    </div>
+                    <div class="pt-5 pb-4 px-5">
+                        <div class="mb-[15px]">
+                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                            <p class="text-[13px]">California City, CA, USA</p>
+                        </div>
+                        <div class="flex items-center mb-[15px]">
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">3 bed</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">4 bath</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">1200 sqft</span>
+                            </p>
+                        </div>
+                        <hr class="h-px mb-[17px]">
+                        <div class="flex items-center justify-between">
+                            <p class="text-[13px]">For Rent</p>
+                            <div class="flex items-center">
+                                <img src="./images/save (2).png" alt="">
+                                <img src="./images/save.png" alt="">
+                                <img src="./images/save (1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                    <div class="h-[240px] relative">
+                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                    </div>
+                    <div class="pt-5 pb-4 px-5">
+                        <div class="mb-[15px]">
+                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                            <p class="text-[13px]">California City, CA, USA</p>
+                        </div>
+                        <div class="flex items-center mb-[15px]">
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">3 bed</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">4 bath</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">1200 sqft</span>
+                            </p>
+                        </div>
+                        <hr class="h-px mb-[17px]">
+                        <div class="flex items-center justify-between">
+                            <p class="text-[13px]">For Rent</p>
+                            <div class="flex items-center">
+                                <img src="./images/save (2).png" alt="">
+                                <img src="./images/save.png" alt="">
+                                <img src="./images/save (1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                    <div class="h-[240px] relative">
+                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                    </div>
+                    <div class="pt-5 pb-4 px-5">
+                        <div class="mb-[15px]">
+                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                            <p class="text-[13px]">California City, CA, USA</p>
+                        </div>
+                        <div class="flex items-center mb-[15px]">
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">3 bed</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">4 bath</span>
+                            </p>
+                            <p class="flex items-center mr-[23px]">
+                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                <span class="text-[13px]">1200 sqft</span>
+                            </p>
+                        </div>
+                        <hr class="h-px mb-[17px]">
+                        <div class="flex items-center justify-between">
+                            <p class="text-[13px]">For Rent</p>
+                            <div class="flex items-center">
+                                <img src="./images/save (2).png" alt="">
+                                <img src="./images/save.png" alt="">
+                                <img src="./images/save (1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
