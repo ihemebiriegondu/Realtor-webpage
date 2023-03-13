@@ -26,7 +26,7 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 2.5,
             spaceBetween: 30,
         },
-        1100:{
+        1100: {
             slidesPerView: 3,
             spaceBetween: 30,
         },
@@ -44,7 +44,6 @@ const swiper = new Swiper('.swiper', {
         }
     },
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true
@@ -151,5 +150,33 @@ const swiper5 = new Swiper('.swiper5', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true
+    }
+});
+
+const swiper6 = new Swiper('.swiper6', {
+    direction: 'horizontal',
+    loop: false,
+    
+
+    slidesPerView: 0.5,
+    spaceBetween: 10,
+
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        }
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+            return `
+                <div class="${className} py-[10px] px-[11px]">
+                    ${index + 1}
+                </div>
+            `
+        },
     }
 });

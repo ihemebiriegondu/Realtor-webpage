@@ -28,3 +28,16 @@
   width: 70px !important;
   height: 70px !important;
 }
+
+.swiper6 .swiper-pagination-bullet {
+  font-size: 15px;
+  color: #181A20 !important;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
+.swiper6 .swiper-pagination-bullet-active {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #EB6753 !important;
+}
