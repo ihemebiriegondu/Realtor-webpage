@@ -161,10 +161,14 @@
                         </div>
                         <p class="text-[15px] font-semibold mb-5">Location</p>
                         <div class="mb-[30px]">
-                            <select id="loactions"
-                                class="bg-transparent border border-[#DDDDDD] rounded-[8px] block w-full py-[12px] px-[15px] text-[#717171] outline-none">
-                                <option class="text-[#717171]" selected>All Cities</option>
-                            </select>
+                            <button class="inline-flex items-center justify-between bg-transparent border border-[#DDDDDD] rounded-[8px] block w-full py-[12px] px-[15px] text-[#717171] outline-none">
+                                All Cities
+                                <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
                         </div>
                         <p class="text-[15px] font-semibold mb-5">Square Feet</p>
                         <div class="flex items-center justify-between w-full mb-[30px]">
@@ -209,7 +213,8 @@
                             <p>Showing 1–10 of 13 results</p>
                             <div class="flex">
                                 <p class="mr-[15px]">Sort by
-                                    <select name="" id="" class="bg-transparent border-none outline-none font-medium cursor-pointer">
+                                    <select name="" id=""
+                                        class="bg-transparent border-none outline-none font-medium cursor-pointer">
                                         <option value="" selected>Newest</option>
                                     </select>
                                 </p>
