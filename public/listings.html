@@ -6,14 +6,853 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="/public/output.css" rel="stylesheet">
-    <title>Realtor</title>
+    <link rel="stylesheet" href="/public/global.css">
+    <title>Homez homepage</title>
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <header class="py-[22px] bg-white shadow-[0px_1px_4px_rgba(24,26,32,0.07)]">
+        <div class="xl:w-10/12 lg:w-11/12 md:w-10/12 w-11/12 mx-auto">
+            <nav class="text-[#181A20] flex items-center justify-between">
+                <div class="lg:hidden block">
+                    <img class="cursor-pointer" src="./images/nav-icon (1).png" alt="">
+                </div>
+                <a href="./index.html" class="flex items-center">
+                    <img src="./images/icon.png" alt="">
+                    <h3 class="mb-0 text-[22px] font-semibold ml-[10px]">homez</h3>
+                </a>
+                <div class="lg:block hidden">
+                    <ul class="flex text-sm font-semibold">
+                        <li class="px-2 mx-2 pb-[11px]"><a href="./index.html" class="">Home</a></li>
+                        <li class="px-2 mx-2 pb-[11px] border-b-2 border-[#181A20]"><a href="./listings.html"
+                                class="">Listing</a></li>
+                        <li class="px-2 mx-2"><a href="" class="">Property</a></li>
+                        <li class="px-2 mx-2"><a href="" class="">Blog</a></li>
+                        <li class="px-2 mx-2"><a href="">Pages</a></li>
+                    </ul>
+                </div>
+                <div class="lg:flex hidden items-center">
+                    <div class="flex items-center mr-5 cursor-pointer">
+                        <img src="./images/user (1) 1 (1).png" class="mr-[10px] w-[18px] h-[18px]" alt="">
+                        <p class="text-sm font-semibold">Login / Register</p>
+                    </div>
+                    <button
+                        class="flex items-center mr-[25px] border border-1 border-[#181A20] rounded-[60px] py-[13px] px-[25px]">
+                        <p class="mr-[10px] text-sm font-semibold">Add Property</p>
+                        <img src="./images/right-up 1 (1).png" alt="">
+                    </button>
+                    <div class="lg:block hidden">
+                        <img class="cursor-pointer" src="./images/nav-icon (1).png" alt="">
+                    </div>
+                </div>
+                <div class="w-[18px] h-[18px] lg:hidden block">
+                    <img src="./images/user (1) 1 (1).png" class="mr-[10px] w-full h-full object-cover" alt="">
+                </div>
+            </nav>
+    </header>
+    <main class="bg-[#E2E2E2] md:pt-[60px] sm:pt-[40px] pt-[20px] text-[#181A20]">
+        <div class="xl:w-10/12 lg:w-11/12 sm:w-10/12 w-11/12 mx-auto overflow-hidden md:pb-[200px] pb-[100px]">
+            <div class="md:mb-[60px] sm:mb-[40px] mb-[20px]">
+                <h3 class="md:text-[30px] text-[20px] font-semibold">New York Homes for Sale</h3>
+                <p class="text-sm">Home / For Rent</p>
+            </div>
+            <div>
+                <section class="grid lg:grid-cols-3 grid-cols-2 xl:gap-x-[50px] gap-x-[30px]">
+                    <aside class="bg-white rounded-[12px] shadow-[0px_1px_4px_rgba(24,26,32,0.07)] lg:block hidden">
+                        <p>Find your home</p>
+                        <input type="text">
+                        <p>Listing Status</p>
+                        <div>
+                            <div>
+                                <input type="radio" name="" id="buy">
+                                <label for="but">Buy</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="" id="buy">
+                                <label for="but">Buy</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="" id="buy">
+                                <label for="but">Buy</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="checkbox" name="" id="buy">
+                                <label for="but">Buy</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="buy">
+                                <label for="but">Buy</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="buy">
+                                <label for="but">Buy</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="buy">
+                                <label for="but">Buy</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="buy">
+                                <label for="but">Buy</label>
+                            </div>
+                        </div>
+                        <p>Price Range</p>
+                        
+                    </aside>
+                    <article class="col-span-2 swiper6 overflow-hidden pb-[200px]">
+                        <div class="text-sm flex justify-between items-center mb-[30px]">
+                            <p>Showing 1–10 of 13 results</p>
+                            <div class="flex">
+                                <p class="mr-[15px]">Sort by <span class="font-medium">Newest</span></p>
+                                <div class="md:flex hidden">
+                                    <div class="bg-[#DDDDDD] w-[1px]"></div>
+                                    <p class="font-medium mr-[15px]">Grid</p>
+                                    <div class="bg-[#DDDDDD] w-[1px]"></div>
+                                    <p class="ml-[15px]">List</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide grid grid-cols-2 grid-row-4 xl:gap-[30px] lg:gap-[10px] sm:gap-[20px] gap-[10px]">
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                        <div
+                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
+                                            <img src="./images/Vector (7).png" alt="" class="">
+                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                        </div>
+                                        <div
+                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
+                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                        <div
+                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
+                                            <img src="./images/Vector (7).png" alt="" class="">
+                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                        </div>
+                                        <div
+                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
+                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                        <div
+                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
+                                            <img src="./images/Vector (7).png" alt="" class="">
+                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                        </div>
+                                        <div
+                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
+                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                        <div
+                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
+                                            <img src="./images/Vector (7).png" alt="" class="">
+                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                        </div>
+                                        <div
+                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
+                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide grid grid-cols-2 grid-row-4 sm:gap-[30px] gap-[10px]">
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                        <div
+                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
+                                            <img src="./images/Vector (7).png" alt="" class="">
+                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                        </div>
+                                        <div
+                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
+                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                        <div
+                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
+                                            <img src="./images/Vector (7).png" alt="" class="">
+                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                        </div>
+                                        <div
+                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
+                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                        <div
+                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
+                                            <img src="./images/Vector (7).png" alt="" class="">
+                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                        </div>
+                                        <div
+                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
+                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                        <div
+                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
+                                            <img src="./images/Vector (7).png" alt="" class="">
+                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                        </div>
+                                        <div
+                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
+                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="./images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="./images/save (2).png" alt="">
+                                                <img src="./images/save.png" alt="">
+                                                <img src="./images/save (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:mt-[30px] mt-[20px]">
+                            <div>
+                                <div class="flex static mx-auto justify-between items-center w-fit">
+                                    <div class="sm:mr-[34px]">
+                                        <img src="./images/Arrows-1.png" alt="" class="cursor-pointer"
+                                            onclick="swiper6.slidePrev();">
+                                    </div>
+                                    <div class="swiper-pagination my-auto w-auto static mb-[4px] lg:mx-[0px] mx-5"
+                                        style="width: auto;">
+                                    </div>
+                                    <div class="sm:ml-[34px]">
+                                        <img src="./images/Arrows-1 (1).png" alt="" id="mynext" class="cursor-pointer"
+                                            onclick="swiper6.slideNext();">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-center mt-5 mx-auto">1 – 20 of 300+ property available</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#0D1C39] relative">
+        <div class="lg:w-10/12 sm:w-11/12 w-full sm:px-0 px-[5px] mx-auto text-white py-[30px]">
+            <div class="flex md:flex-row flex-col md:justify-between md:items-center md:mb-[30px] mb-[26px]">
+                <a href="./index.html" class="flex items-center md:justify-start justify-center md:mb-0 mb-5">
+                    <img src="./images/icon.png" alt="">
+                    <h3 class="mb-0 text-[22px] font-semibold ml-[10px]">homez</h3>
+                </a>
+                <div class="flex md:flex-row flex-col md:items-center">
+                    <p class="text-[15px] md:mr-[23px] md:ml-0 ml-4">Follow us</p>
+                    <div class="flex items-center">
+                        <a href=""
+                            class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
+                                src="./images/facebook (2).png" alt=""></a>
+                        <a href=""
+                            class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
+                                src="./images/twitter (2).png" alt=""></a>
+                        <a href=""
+                            class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
+                                src="./images/insta.png" alt=""></a>
+                        <a href=""
+                            class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
+                                src="./images/linkedin (2).png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white/[.1] border-white/[.1] h-px mb-[60px] md-block hidden">
+            <div class="flex justify-between mb-[60px]">
+                <div class="md:grid hidden grid-cols-3 gap-x-[20px] grow">
+                    <div>
+                        <p class="text-[15px] mb-5">Popular Search</p>
+                        <div class="text-sm text-[#BEBDBD]">
+                            <p class="mb-4">Apartment for Rent</p>
+                            <p class="mb-4">Apartment Low to hide</p>
+                            <p class="mb-4">Offices for Buy</p>
+                            <p class="mb-4">Offices for Rent</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[15px] mb-5">Quick Links</p>
+                        <div class="text-sm text-[#BEBDBD]">
+                            <p class="mb-4">Terms of Use</p>
+                            <p class="mb-4">Privacy Policy</p>
+                            <p class="mb-4">Pricing Plans</p>
+                            <p class="mb-4">Our Services</p>
+                            <p class="mb-4">Contact Support</p>
+                            <p class="mb-4">Careers</p>
+                            <p class="mb-4">FAQs</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[15px] mb-5">Discover</p>
+                        <div class="text-sm text-[#BEBDBD]">
+                            <p class="mb-4">Miami</p>
+                            <p class="mb-4">Los Angeles</p>
+                            <p class="mb-4">Chicago</p>
+                            <p class="mb-4">New York</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:ml-12 sm:ml-4 ml-0">
+                    <div class="grid grid-cols-2 grid-rows-2 w-fit md:gap-x-[30px] gap-x-[10px] mb-[30px]">
+                        <p class="text-sm text-[#BEBDBD] mb-2">Total Free Customer Care</p>
+                        <p class="text-sm text-[#BEBDBD] mb-2">Need Live Support?</p>
+                        <a href="" class="text-[15px] font-semibold">+(0) 123 050 945 02</a>
+                        <a href="" class="text-[15px] font-semibold">hi@realton.com</a>
+                    </div>
+                    <p class="mb-5 text-[15px]">Keep Yourself Up to Date</p>
+                    <form class="py-[22px] px-[23px] bg-white rounded-[12px] flex justify-between items-center w-full">
+                        <input type="email" name="" id="" placeholder="Your Email"
+                            class="bg-transparent grow mr-4 outline-none placeholder:text-[#181A20] text-sm text-[#181A20]">
+                        <button class="text-[#181A20] text-[15px] font-semibold">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="bg-white/[.1] border-white/[.1] h-px md:mb-[60px] mb-[20px]">
+            <div class="flex md:flex-row flex-col items-center md:justify-between justify-center text-[#BEBDBD]">
+                <p class="text-sm md:mb-0 mb-[11px]">© Homez - All rights reserved</p>
+                <div class="flex items-center">
+                    <a href="" class="mr-2 text-sm">Privacy</a>
+                    <span class="block my-auto"> · </span>
+                    <a href="" class="mr-2 ml-2 text-sm">Terms</a>
+                    <span class="block my-auto"> · </span>
+                    <a href="" class="ml-2 text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+        <img src="./images/700 1.png" alt="" class="absolute bottom-0 left-[-40px]">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 
 </html>
