@@ -93,7 +93,7 @@ const swiper3 = new Swiper('.swiper3', {
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-            return '<span class="' + className + '" style="background: url(./images/Surface1.png); background-size: cover; background-position: center;"></span>';
+            return '<span class="' + className + '" style="background: url(/public/images/Surface1.png); background-size: cover; background-position: center;"></span>';
         },
     }
 });
