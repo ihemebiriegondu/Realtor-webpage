@@ -15,7 +15,7 @@
 
 <body>
     <header class="bg-[url('./images/bg.png')] bg-cover bg-fixed bg-center bg-no-repeat pt-[21px] pb-[75.5px]">
-        <div class="xl:w-10/12 lg:w-11/12 w-10/12 mx-auto">
+        <div class="xl:w-10/12 lg:w-11/12 md:w-10/12 w-11/12 mx-auto">
             <nav class="text-white flex items-center justify-between mb-[130px]">
                 <div class="lg:hidden block">
                     <img class="cursor-pointer" src="./images/nav-icon.png" alt="">
@@ -52,38 +52,44 @@
                 </div>
             </nav>
 
-            <div class="mb-16 text-white">
-                <h1 class="mb-[10px] text-[46px] font-semibold">Find the perfect place to <br> Live with your family
+            <div class="mb-16 text-white md:text-left text-center">
+                <h1 class="mb-[10px] xl:text-[46px] lg:text-[40px] md:text-[34px] text-[24px] font-semibold">Find the
+                    perfect place to <br> Live with your family
                 </h1>
                 <p class="text-[15px]">Let’s find a home that’s perfect for you</p>
             </div>
 
             <div class="mb-[30px]">
-                <div class="flex bg-white w-fit rounded-t-[12px] pt-4 px-8">
+                <div class="flex bg-white w-fit rounded-t-[12px] pt-4 md:px-8 px-5">
                     <p
                         class="mr-[27px] px-2 text-sm font-semibold cursor-pointer pb-[14px] border-b-2 border-[#181A20]">
                         Buy</p>
                     <p class="mr-[27px] px-2 text-sm font-semibold cursor-pointer text-[#717171]">Rent</p>
                     <p class="mr-[27px] px-2 text-sm font-semibold cursor-pointer text-[#717171]">Sold</p>
                 </div>
-                <form class="bg-white p-5 rounded-b-[12px] rounded-tr-[12px] flex items-center justify-between">
-                    <div class="bg-[#F7F7F7] p-5 rounded-[12px] mr-[25px] flex items-center grow">
+                <form
+                    class="bg-white md:px-5 px-2 py-5 rounded-b-[12px] rounded-tr-[12px] flex md:flex-row flex-col md:items-center justify-between">
+                    <div class="bg-[#F7F7F7] p-5 rounded-[12px] md:mr-[25px] flex items-center grow">
                         <img src="./images/home (2) 1.png" alt="" class="w-4 h-4 mr-[14px]">
-                        <input type="text" class="bg-[#F7F7F7] w-full outline-none text-sm placeholder:text-[#181A20]"
+                        <input type="text" class="bg-transparent w-full outline-none text-sm placeholder:text-[#181A20]"
                             placeholder="Enter an address, neighborhood, city, or ZIP code">
                     </div>
-                    <div class="flex-none flex items-center">
-                        <div class="flex items-center">
+                    <div class="flex-none md:mt-0 mt-[10px] flex items-center">
+                        <div
+                            class="flex items-center md:w-auto w-[40%] md:justify-start justify-center md:bg-transparent bg-[#F7F7F7] md:py-0 py-[19px] md:rounded-none rounded-[12px] md:mr-[0px] mr-[10px]">
                             <img src="./images/settings 1.png" alt="" class="w-4 h-4 mr-[10px] cursor-pointer">
-                            <p class="mr-5 text-sm font-semibold">Advanced</p>
+                            <p class="md:mr-5 text-sm font-semibold">Advanced</p>
                         </div>
-                        <button class="bg-primary py-[19px] px-[18px] rounded-full"><img src="./images/search (1) 1.png"
-                                alt=""></button>
+                        <button
+                            class="bg-primary py-[19px] px-[18px] md:rounded-full rounded-[12px] flex items-center justify-center md:w-auto w-[60%]">
+                            <img src="./images/search (1) 1.png" alt="">
+                            <p class="md:hidden block text-white text-sm font-semibold ml-[10px]">Search</p>
+                        </button>
                     </div>
                 </form>
             </div>
 
-            <div class="text-white">
+            <div class="text-white md:block hidden">
                 <p class="mb-[20.5px] text-sm font-semibold">Or browse featured categories:</p>
                 <div class="grid grid-cols-4 gap-[28px] w-fit">
                     <a href="flex">
@@ -109,13 +115,17 @@
     </header>
 
     <main>
-        <section class="my-[120px] grid lg:grid-cols-2 grid-col-1 gap-[30px] md:w-10/12 w-11/12 mx-auto">
-            <div class="rounded-[12px] bg-primary/[.07] flex justify-between pt-[60px] lg:pb-0 pb-[60px] sm:pl-[60px] relative">
+        <section
+            class="lg:my-[120px] md:my-[60px] my-[40px] grid lg:grid-cols-2 grid-col-1 gap-[30px] md:w-10/12 w-11/12 mx-auto">
+            <div
+                class="rounded-[12px] bg-primary/[.07] flex justify-between pt-[60px] lg:pb-0 pb-[60px] sm:pl-[60px] relative">
                 <div class="sm:text-left text-center sm:w-auto w-full">
-                    <h6 class="md:text-[22px] text-[20px] font-semibold mb-[10px]">The New Way to Find <br> Your Home</h6>
+                    <h6 class="md:text-[22px] text-[20px] font-semibold mb-[10px]">The New Way to Find <br> Your Home
+                    </h6>
                     <p class="text-[15px] mb-[26px]">From as low as $10 per day with <br> limited time offer discounts.
                     </p>
-                    <button class="bg-primary py-4 px-[30px] sm:mx-0 mx-auto flex items-center rounded-[12px] text-white">
+                    <button
+                        class="bg-primary py-4 px-[30px] sm:mx-0 mx-auto flex items-center rounded-[12px] text-white">
                         <p class="text-[15px] font-semibold mr-[10px]">How İt Works</p>
                         <img src="./images/Group.png" alt="">
                     </button>
@@ -157,26 +167,29 @@
             </div>
         </section>
 
-        <section class="lg:block hidden swiper pb-[120px]">
-            <div class="mb-[60px] w-10/12 mx-auto flex items-baseline justify-between">
+        <section class="swiper md:pb-[120px] pb-[80px] relative lg:pr-[120px] md:pr-[75px] pr-[10px]">
+            <div class="lg:mb-[60px] md:mb-[40px] mb-[20px] w-10/12 mx-auto lg:flex items-baseline justify-between">
                 <div>
-                    <h3 class="text-[30px] font-semibold">Discover Our Featured Listings</h3>
+                    <h3 class="md:text-[30px] text-[20px] font-semibold">Discover Our Featured Listings</h3>
                     <p class="text-sm">Aliquam lacinia diam quis lacus euismod</p>
                 </div>
-                <div class="flex justify-between items-center w-1/6 ml-auto">
+                <div
+                    class="flex lg:static absolute md:bottom-[80px] bottom-[40px] justify-between items-center 2xl:w-1/6 lg:w-1/5 w-fit ml-auto lg:mr-[-120px]">
                     <div>
-                        <img src="./images/arrow-right.png" alt="" id="myprev" class="cursor-pointer">
+                        <img src="./images/arrow-right.png" alt="" class="cursor-pointer" onclick="swiper.slidePrev();">
                     </div>
-                    <div class="swiper-pagination my-auto w-auto static" style="width: auto;"></div>
+                    <div class="swiper-pagination my-auto w-auto static mb-[4px] lg:mx-[0px] mx-5" style="width: auto;">
+                    </div>
                     <div>
-                        <img src="./images/arrow-right (1).png" alt="" id="mynext" class="cursor-pointer">
+                        <img src="./images/arrow-right (1).png" alt="" id="mynext" class="cursor-pointer"
+                            onclick="swiper.slideNext();">
                     </div>
                 </div>
             </div>
-            <div class="swiper-wrapper w-10/12 mx-auto">
-                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+            <div class="swiper-wrapper md:w-10/12 w-full sm:px-[0px] px-[5px] mx-auto md:ml-auto mr-auto ml-[5px]">
+                <div class="swiper-slide rounded-[12px] border border-[#DDDDDD] overflow-hidden">
                     <div class="h-[240px] relative">
-                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
                         <div
                             class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
                             <img src="./images/Vector (7).png" alt="" class="">
@@ -217,9 +230,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                <div class="swiper-slide rounded-[12px] border border-[#DDDDDD] overflow-hidden">
                     <div class="h-[240px] relative">
-                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
                     </div>
                     <div class="pt-5 pb-4 px-5">
                         <div class="mb-[15px]">
@@ -251,9 +264,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                <div class="swiper-slide rounded-[12px] border border-[#DDDDDD] overflow-hidden">
                     <div class="h-[240px] relative">
-                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
                     </div>
                     <div class="pt-5 pb-4 px-5">
                         <div class="mb-[15px]">
@@ -285,9 +298,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                <div class="swiper-slide rounded-[12px] border border-[#DDDDDD] overflow-hidden">
                     <div class="h-[240px] relative">
-                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
                     </div>
                     <div class="pt-5 pb-4 px-5">
                         <div class="mb-[15px]">
@@ -319,9 +332,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                <div class="swiper-slide rounded-[12px] border border-[#DDDDDD] overflow-hidden">
                     <div class="h-[240px] relative">
-                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
                     </div>
                     <div class="pt-5 pb-4 px-5">
                         <div class="mb-[15px]">
@@ -353,9 +366,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                <div class="swiper-slide rounded-[12px] border border-[#DDDDDD] overflow-hidden">
                     <div class="h-[240px] relative">
-                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
                     </div>
                     <div class="pt-5 pb-4 px-5">
                         <div class="mb-[15px]">
@@ -387,9 +400,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                <div class="swiper-slide rounded-[12px] border border-[#DDDDDD] overflow-hidden">
                     <div class="h-[240px] relative">
-                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
                     </div>
                     <div class="pt-5 pb-4 px-5">
                         <div class="mb-[15px]">
@@ -421,9 +434,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide w-[370px] rounded-[12px] border border-[#DDDDDD] overflow-hidden">
+                <div class="swiper-slide rounded-[12px] border border-[#DDDDDD] overflow-hidden">
                     <div class="h-[240px] relative">
-                        <img src="./images/Surface 1.png" alt="" class="h-full w-full">
+                        <img src="./images/Surface1.png" alt="" class="h-full w-full">
                     </div>
                     <div class="pt-5 pb-4 px-5">
                         <div class="mb-[15px]">
@@ -458,18 +471,20 @@
             </div>
         </section>
 
-        <section class="lg:block hidden swiper2 pb-[120px] w-10/12 mx-auto overflow-hidden">
-            <div class="mb-[60px] flex items-baseline justify-between">
+        <section class="swiper2 md:pb-[120px] pb-[80px] md:w-10/12 w-11/12 mx-auto overflow-hidden relative">
+            <div class="lg:mb-[60px] md:mb-[40px] mb-[20px] lg:flex items-baseline justify-between">
                 <div>
-                    <h3 class="text-[30px] font-semibold">Explore Cities</h3>
+                    <h3 class="md:text-[30px] text-[20px] font-semibold">Explore Cities</h3>
                     <p class="text-sm">Aliquam lacinia diam quis lacus euismod</p>
                 </div>
-                <div class="flex justify-between items-center w-1/6 ml-auto">
+                <div
+                    class="flex lg:static absolute md:bottom-[80px] bottom-[40px] justify-between items-center 2xl:w-1/6 lg:w-1/5 w-fit ml-auto">
                     <div>
                         <img src="./images/arrow-right.png" alt="" class="cursor-pointer"
                             onclick="swiper2.slidePrev();">
                     </div>
-                    <div class="swiper-pagination my-auto w-auto static" style="width: auto;"></div>
+                    <div class="swiper-pagination my-auto w-auto static mb-[4px] lg:mx-[0px] mx-5" style="width: auto;">
+                    </div>
                     <div>
                         <img src="./images/arrow-right (1).png" alt="" id="mynext" class="cursor-pointer"
                             onclick="swiper2.slideNext();">
@@ -540,7 +555,7 @@
                         <p class="text-[15px]">12 Properties</p>
                     </div>
                 </div>
-                <div class="swiper-slide  w-[270px] overflow-hidden">
+                <div class="swiper-slide w-[270px] overflow-hidden">
                     <div class="mb-5 w-full">
                         <img src="./images/maps.png" alt="" class="w-full object-cover">
                     </div>
@@ -553,10 +568,12 @@
         </section>
 
 
-        <section class="lg:block hidden bg-[#F7F7F7]">
-            <div class="w-10/12 mx-auto pt-[111.9px] pb-[144px] flex justify-between items-center">
-                <div class="w-[28%]">
-                    <h3 class="text-[30px] font-semibold mb-[30px]">Let’s find the right selling option for you</h3>
+        <section class="bg-[#F7F7F7]">
+            <div
+                class="md:w-10/12 w-11/12 mx-auto xl:pt-[111.9px] lg:pt-[80px] md:pt-[60px] pt-[40px] xl:pb-[144px] lg:pb-[110px] md:pb-[70px] pb-[40px] flex md:flex-row flex-col md:justify-between md:items-center">
+                <div class="xl:w-[28%] lg:w-[40%] md:w-1/2 w-full">
+                    <h3 class="md:text-[30px] text-[20px] font-semibold lg:mb-[30px] md:mb-[15px] mb-[5px]">Let’s find
+                        the right selling option for you</h3>
                     <p class="text-[15px] mb-[30px]">As the complexity of buildings to increase, the field of
                         architecture.</p>
                     <div>
@@ -584,215 +601,273 @@
                         <img src="./images/Group.png" alt="">
                     </button>
                 </div>
-                <div class="relative">
-                    <div class="w-full flex items-center">
-                        <div class="mr-[30px] h-[369px] w-[290px] mt-[380px] rounded-[12px] overflow-hidden">
-                            <img src="./images/Surface 1.png" alt="" class="w-full h-full object-cover">
+                <div class="relative xl:w-auto lg:w-[60%] md:w-1/2 w-auto">
+                    <div class="w-full flex md:flex-row flex-col md:items-center">
+                        <div
+                            class="lg:mr-[30px] md:mr-[15px] lg:ml-0 md:ml-[-60px] ml-0 md:h-[369px] sm:h-[350px] h-[300px] md:w-[290px] w-3/4 md:mt-[380px] mt-[40px] md:mb-0 mb-[10px] rounded-[12px] overflow-hidden">
+                            <img src="./images/Surface1.png" alt="" class="w-full h-full object-cover">
                         </div>
-                        <div class="h-[537px] w-[390px] rounded-[12px] overflow-hidden relative z-20">
-                            <img src="./images/Surface 1.png" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="md:h-[537px] sm:h-[520px] h-[500px] md:w-[390px] w-full rounded-[12px] overflow-hidden relative z-20">
+                            <img src="./images/Surface1.png" alt="" class="w-full h-full object-cover">
                         </div>
                     </div>
                     <div
-                        class="p-[30px] bg-white rounded-[12px] shadow-[0px_0px_50px_rgba(24,26,32,0.07)] w-fit absolute bottom-[-24px] left-[160px] z-40">
-                        <p class="text-[15px] font-semibold mb-[13px] text-center">10k+ Exclusive Agents</p>
-                        <div class="flex items-center">
-                            <img src="./images/Surface 1.png" alt=""
-                                class="w-[50px] h-[50px] rounded-full border-2 border-white">
-                            <img src="./images/Surface 1.png" alt=""
-                                class="w-[50px] h-[50px] rounded-full border-2 border-white ml-[-9px]">
-                            <img src="./images/Surface 1.png" alt=""
-                                class="w-[50px] h-[50px] rounded-full border-2 border-white ml-[-9px]">
-                            <img src="./images/Surface 1.png" alt=""
-                                class="w-[50px] h-[50px] rounded-full border-2 border-white ml-[-9px]">
-                            <div class="bg-[#181A20] rounded-full py-[5px] px-[15px] border-2 border-white ml-[-9px]">
+                        class="w-fit flex flex-col items-center lg:p-[30px] p-[20px] bg-white rounded-[12px] shadow-[0px_0px_50px_rgba(24,26,32,0.07)] 
+                        absolute lg:bottom-[-24px] md:bottom-[30px] bottom-[450px] lg:left-[160px] md:left-[10px] left-auto right-0 z-40">
+                        <p class="lg:text-[15px] md:text-[13px] text-[15px] font-semibold mb-[13px] text-center">10k+
+                            Exclusive Agents</p>
+                        <div class="flex items-center mx-auto">
+                            <img src="./images/Surface1.png" alt=""
+                                class="lg:w-[50px] w-[40px] lg:h-[50px] h-[40px] rounded-full border-2 border-white">
+                            <img src="./images/Surface1.png" alt=""
+                                class="lg:w-[50px] w-[40px] lg:h-[50px] h-[40px] rounded-full border-2 border-white ml-[-9px]">
+                            <img src="./images/Surface1.png" alt=""
+                                class="lg:w-[50px] w-[40px] lg:h-[50px] h-[40px] rounded-full border-2 border-white ml-[-9px]">
+                            <img src="./images/Surface1.png" alt=""
+                                class="lg:w-[50px] w-[40px] lg:h-[50px] h-[40px] rounded-full border-2 border-white ml-[-9px]">
+                            <div
+                                class="bg-[#181A20] rounded-full lg:py-[5px] py-[1px] lg:px-[15px] px-[11px] border-2 border-white ml-[-9px]">
                                 <p class="text-[25px] font-medium text-white">+</p>
                             </div>
                         </div>
                     </div>
-                    <img src="./images/Vector (9).png" alt="" class="absolute right-[-60px] bottom-0 z-10">
+                    <img src="./images/Vector (9).png" alt=""
+                        class="absolute right-[-60px] bottom-0 z-10 md:block hidden">
                 </div>
             </div>
         </section>
 
-        <section class="lg:block hidden py-[120px] w-1/2 mx-auto text-center overflow-hidden">
-            <h3 class="text-[30px] font-semibold">Testimonials</h3>
+        <section
+            class="lg:py-[120px] md:py-[60px] py-[40px] lg:w-1/2 sm:w-3/4 w-11/12 mx-auto text-center overflow-hidden">
+            <h3 class="md:text-[30px] text-[20px] font-semibold">Testimonials</h3>
             <p class="text-sm">10,000+ unique online course list designs</p>
-            <div class="mt-[60px] mb-[30px]">
+            <div class="lg:mt-[60px] md:mt-[40px] mt-[20px] md:mb-[30px] mb-[15px]">
                 <img src="./images/quote.png" alt="" class="mx-auto">
             </div>
-            <p class="text-[22px] font-semibold">What a great experience! I have visited one of the workshops and
-                attended a masterclass, and both were super useful for young designers. Highly recommended.</p>
-            <div class="mt-[30px]">
-                <span class="text-[15px] font-semibold block mb-2">Ali Tufan</span>
-                <span class="text-[13px] block">Product Manager, Apple Inc</span>
-            </div>
-            <div class="w-2/3 overflow-hidden mx-auto">
-                <div class="swiper3 w-full">
-                    <div class="swiper-wrapper mt-[30px] flex justify-center items-center">
-                        <div class="swiper-slide w-[70px] h-[70px] rounded-full overflow-hidden">
-                            <img src="./images/Surface 1.png" alt="" class="w-full h-full">
+            <div class="swiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <p class="text-[22px] font-semibold">What a great experience! I have visited one of the
+                                workshops
+                                and
+                                attended a masterclass, and both were super useful for young designers. Highly
+                                recommended.
+                            </p>
+                            <div class="mt-[30px]">
+                                <span class="text-[15px] font-semibold block mb-2">Ali Tufan</span>
+                                <span class="text-[13px] block">Product Manager, Apple Inc</span>
+                            </div>
                         </div>
-                        <div class="swiper-slide w-[70px] h-[70px] rounded-full overflow-hidden">
-                            <img src="./images/Surface 1.png" alt="" class="w-full h-full">
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <p class="text-[22px] font-semibold">What a great experience! I have visited one of the
+                                workshops
+                                and
+                                attended a masterclass, and both were super useful for young designers. Highly
+                                recommended.
+                            </p>
+                            <div class="mt-[30px]">
+                                <span class="text-[15px] font-semibold block mb-2">Ali Tufan</span>
+                                <span class="text-[13px] block">Product Manager, Apple Inc</span>
+                            </div>
                         </div>
-                        <div class="swiper-slide w-[70px] h-[70px] rounded-full overflow-hidden">
-                            <img src="./images/Surface 1.png" alt="" class="w-full h-full">
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <p class="text-[22px] font-semibold">What a great experience! I have visited one of the
+                                workshops
+                                and
+                                attended a masterclass, and both were super useful for young designers. Highly
+                                recommended.
+                            </p>
+                            <div class="mt-[30px]">
+                                <span class="text-[15px] font-semibold block mb-2">Ali Tufan</span>
+                                <span class="text-[13px] block">Product Manager, Apple Inc</span>
+                            </div>
                         </div>
-                        <div class="swiper-slide w-[70px] h-[70px] rounded-full overflow-hidden">
-                            <img src="./images/Surface 1.png" alt="" class="w-full h-full">
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <p class="text-[22px] font-semibold">What a great experience! I have visited one of the
+                                workshops
+                                and
+                                attended a masterclass, and both were super useful for young designers. Highly
+                                recommended.
+                            </p>
+                            <div class="mt-[30px]">
+                                <span class="text-[15px] font-semibold block mb-2">Ali Tufan</span>
+                                <span class="text-[13px] block">Product Manager, Apple Inc</span>
+                            </div>
                         </div>
-                        <div class="swiper-slide w-[70px] h-[70px] rounded-full overflow-hidden">
-                            <img src="./images/Surface 1.png" alt="" class="w-full h-full">
-                        </div>
-                        <div class="swiper-slide w-[70px] h-[70px] rounded-full overflow-hidden">
-                            <img src="./images/Surface 1.png" alt="" class="w-full h-full">
-                        </div>
-                        <div class="swiper-slide w-[70px] h-[70px] rounded-full overflow-hidden">
-                            <img src="./images/Surface 1.png" alt="" class="w-full h-full">
-                        </div>
-                        <div class="swiper-slide w-[70px] h-[70px] rounded-full overflow-hidden">
-                            <img src="./images/Surface 1.png" alt="" class="w-full h-full">
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <p class="text-[22px] font-semibold">What a great experience! I have visited one of the
+                                workshops
+                                and
+                                attended a masterclass, and both were super useful for young designers. Highly
+                                recommended.
+                            </p>
+                            <div class="mt-[30px]">
+                                <span class="text-[15px] font-semibold block mb-2">Ali Tufan</span>
+                                <span class="text-[13px] block">Product Manager, Apple Inc</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="mt-[24px]">
+                    <div class="swiper-pagination my-auto w-auto static" style="width: auto;"></div>
+                </div>
             </div>
         </section>
 
-        <section class="lg:block hidden w-10/12 mx-auto overflow-hidden">
-            <h3 class="text-[30px] font-semibold text-center">Featured Properties</h3>
+        <section class="md:w-10/12 w-11/12 mx-auto overflow-hidden pb-[50px]">
+            <h3 class="md:text-[30px] text-[20px] font-semibold text-center">Featured Properties</h3>
             <p class="text-sm text-center">Aliquam lacinia diam quis lacus euismod</p>
 
             <div class="swiper4 w-full">
                 <div class="swiper-wrapper w-full">
                     <div class="swiper-slide w-full">
-                        <div class="py-[90px] px-[60px] bg-[#F4EFF7] mt-[110px] w-full rounded-[12px] relative">
-                            <div class="flex items-center mb-[30px]">
+                        <div
+                            class="lg:py-[90px] py-0 lg:px-[60px] px-0 bg-[#F4EFF7] lg:mt-[110px] md:mt-[60px] mt-[20px] w-full rounded-[12px] relative lg:block flex sm:flex-row flex-col-reverse">
+                            <div
+                                class="lg:py-0 md:py-[60px] py-[30px] lg:pl-0 md:pl-[40px] sm:pl-[20px] pl-[10px] lg:pr-0 sm:pr-[20px] pr-[10px]">
+                                <div class="flex items-center mb-[30px]">
+                                    <div
+                                        class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] mr-5">
+                                        <img src="./images/Vector (7).png" alt="" class="">
+                                        <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                    </div>
+                                    <div
+                                        class="bg-[#0D1C39] text-white rounded-[6px] flex items-center w-fit py-[6px] px-[12.5px]">
+                                        <p class="text-xs">FOR RENT</p>
+                                    </div>
+                                </div>
+                                <h5 class="text-[20px] font-semibold mb-[5px]">Equestrian Family Home</h5>
+                                <p class="text-[15px]">California City, CA, USA</p>
+                                <div class="flex items-center mt-[30px] mb-[30px]">
+                                    <div class="flex items-center sm:mr-[26px] mr-[10px]">
+                                        <div
+                                            class="sm:py-[17px] sm:px-[16px] sm:bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
+                                            <img src="./images/Vector (4).png" alt="">
+                                        </div>
+                                        <span class="text-[13px] font-semibold">3 bed</span>
+                                    </div>
+                                    <div class="flex items-center sm:mr-[26px] mr-[10px]">
+                                        <div
+                                            class="sm:py-[17px] sm:px-[16px] sm:bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
+                                            <img src="./images/Vector (5).png" alt="">
+                                        </div>
+                                        <span class="text-[13px] font-semibold">4 bath</span>
+                                    </div>
+                                    <div class="flex items-center sm:mr-[26px] mr-[10px]">
+                                        <div
+                                            class="sm:py-[17px] sm:px-[16px] sm:bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
+                                            <img src="./images/Vector (6).png" alt="">
+                                        </div>
+                                        <span class="text-[13px] font-semibold">1200 sqft</span>
+                                    </div>
+                                </div>
                                 <div
-                                    class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] mr-5">
-                                    <img src="./images/Vector (7).png" alt="" class="">
-                                    <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                    class="grid grid-cols-2 grid-rows-2 w-fit md:gap-x-[30px] sm:gap-x-[20px] gap-x-[10px] md:mb-[35px] mb-[20px]">
+                                    <p class="sm:text-sm text-xs">Total Free Customer Care</p>
+                                    <p class="sm:text-sm text-xs">Need Live Support?</p>
+                                    <a href="" class="sm:text-[15px] text-[13px] font-semibold">+(0) 123 050 945 02</a>
+                                    <a href="" class="sm:text-[15px] text-[13px] font-semibold">hi@realton.com</a>
                                 </div>
-                                <div
-                                    class="bg-[#0D1C39] text-white rounded-[6px] flex items-center w-fit py-[6px] px-[12.5px]">
-                                    <p class="text-xs">FOR RENT</p>
+                                <div class="">
+                                    <p class="font-semibold text-[20px]">$14,000 / mo</p>
                                 </div>
-                            </div>
-                            <h5 class="text-[20px] font-semibold mb-[5px]">Equestrian Family Home</h5>
-                            <p class="text-[15px]">California City, CA, USA</p>
-                            <div class="flex items-center mt-[30px] mb-[30px]">
-                                <div class="flex items-center mr-[26px]">
-                                    <div
-                                        class="py-[17px] px-[16px] bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
-                                        <img src="./images/Vector (4).png" alt="">
-                                    </div>
-                                    <span class="text-[13px] font-semibold">3 bed</span>
-                                </div>
-                                <div class="flex items-center mr-[26px]">
-                                    <div
-                                        class="py-[17px] px-[16px] bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
-                                        <img src="./images/Vector (5).png" alt="">
-                                    </div>
-                                    <span class="text-[13px] font-semibold">4 bath</span>
-                                </div>
-                                <div class="flex items-center mr-[26px]">
-                                    <div
-                                        class="py-[17px] px-[16px] bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
-                                        <img src="./images/Vector (6).png" alt="">
-                                    </div>
-                                    <span class="text-[13px] font-semibold">1200 sqft</span>
-                                </div>
-                            </div>
-                            <div class="grid grid-cols-2 grid-rows-2 w-fit gap-x-[30px] mb-[35px]">
-                                <p class="text-sm">Total Free Customer Care</p>
-                                <p class="text-sm">Need Live Support?</p>
-                                <a href="" class="text-[15px] font-semibold">+(0) 123 050 945 02</a>
-                                <a href="" class="text-[15px] font-semibold">hi@realton.com</a>
-                            </div>
-                            <div class="">
-                                <p class="font-semibold text-[20px]">$14,000 / mo</p>
                             </div>
                             <div
-                                class="absolute top-[-50px] right-0 bottom-[-50px] w-1/2 rounded-[12px] overflow-hidden">
-                                <img src="./images/Surface 1.png" alt="" class="h-full w-full object-cover">
+                                class="sm:h-auto h-[350px] lg:absolute lg:top-[-50px] right-0 lg:bottom-[-50px] sm:w-1/2 w-full lg:rounded-[12px] sm:rounded-tr-[12px] sm:rounded-br-[12px] sm:rounded-t-[0px] rounded-t-[12px] overflow-hidden">
+                                <img src="./images/Surface1.png" alt="" class="h-full w-full object-cover">
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide w-full">
-                        <div class="py-[90px] px-[60px] bg-[#F4EFF7] mt-[110px] w-full rounded-[12px] relative">
-                            <div class="flex items-center mb-[30px]">
+                        <div
+                            class="lg:py-[90px] py-0 lg:px-[60px] px-0 bg-[#F4EFF7] lg:mt-[110px] md:mt-[60px] mt-[20px] w-full rounded-[12px] relative lg:block flex sm:flex-row flex-col-reverse">
+                            <div
+                                class="lg:py-0 md:py-[60px] py-[30px] lg:pl-0 md:pl-[40px] sm:pl-[20px] pl-[10px] lg:pr-0 sm:pr-[20px] pr-[10px]">
+                                <div class="flex items-center mb-[30px]">
+                                    <div
+                                        class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] mr-5">
+                                        <img src="./images/Vector (7).png" alt="" class="">
+                                        <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                    </div>
+                                    <div
+                                        class="bg-[#0D1C39] text-white rounded-[6px] flex items-center w-fit py-[6px] px-[12.5px]">
+                                        <p class="text-xs">FOR RENT</p>
+                                    </div>
+                                </div>
+                                <h5 class="text-[20px] font-semibold mb-[5px]">Equestrian Family Home</h5>
+                                <p class="text-[15px]">California City, CA, USA</p>
+                                <div class="flex items-center mt-[30px] mb-[30px]">
+                                    <div class="flex items-center sm:mr-[26px] mr-[10px]">
+                                        <div
+                                            class="sm:py-[17px] sm:px-[16px] sm:bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
+                                            <img src="./images/Vector (4).png" alt="">
+                                        </div>
+                                        <span class="text-[13px] font-semibold">3 bed</span>
+                                    </div>
+                                    <div class="flex items-center sm:mr-[26px] mr-[10px]">
+                                        <div
+                                            class="sm:py-[17px] sm:px-[16px] sm:bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
+                                            <img src="./images/Vector (5).png" alt="">
+                                        </div>
+                                        <span class="text-[13px] font-semibold">4 bath</span>
+                                    </div>
+                                    <div class="flex items-center sm:mr-[26px] mr-[10px]">
+                                        <div
+                                            class="sm:py-[17px] sm:px-[16px] sm:bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
+                                            <img src="./images/Vector (6).png" alt="">
+                                        </div>
+                                        <span class="text-[13px] font-semibold">1200 sqft</span>
+                                    </div>
+                                </div>
                                 <div
-                                    class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] mr-5">
-                                    <img src="./images/Vector (7).png" alt="" class="">
-                                    <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                    class="grid grid-cols-2 grid-rows-2 w-fit md:gap-x-[30px] sm:gap-x-[20px] gap-x-[10px] md:mb-[35px] mb-[20px]">
+                                    <p class="sm:text-sm text-xs">Total Free Customer Care</p>
+                                    <p class="sm:text-sm text-xs">Need Live Support?</p>
+                                    <a href="" class="sm:text-[15px] text-[13px] font-semibold">+(0) 123 050 945 02</a>
+                                    <a href="" class="sm:text-[15px] text-[13px] font-semibold">hi@realton.com</a>
                                 </div>
-                                <div
-                                    class="bg-[#0D1C39] text-white rounded-[6px] flex items-center w-fit py-[6px] px-[12.5px]">
-                                    <p class="text-xs">FOR RENT</p>
+                                <div class="">
+                                    <p class="font-semibold text-[20px]">$14,000 / mo</p>
                                 </div>
-                            </div>
-                            <h5 class="text-[20px] font-semibold mb-[5px]">Equestrian Family Home</h5>
-                            <p class="text-[15px]">California City, CA, USA</p>
-                            <div class="flex items-center mt-[30px] mb-[30px]">
-                                <div class="flex items-center mr-[26px]">
-                                    <div
-                                        class="py-[17px] px-[16px] bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
-                                        <img src="./images/Vector (4).png" alt="">
-                                    </div>
-                                    <span class="text-[13px] font-semibold">3 bed</span>
-                                </div>
-                                <div class="flex items-center mr-[26px]">
-                                    <div
-                                        class="py-[17px] px-[16px] bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
-                                        <img src="./images/Vector (5).png" alt="">
-                                    </div>
-                                    <span class="text-[13px] font-semibold">4 bath</span>
-                                </div>
-                                <div class="flex items-center mr-[26px]">
-                                    <div
-                                        class="py-[17px] px-[16px] bg-white rounded-[12px] shadow-[0px_6px_15px_rgba(64,79,104,0.05)] mr-[10px]">
-                                        <img src="./images/Vector (6).png" alt="">
-                                    </div>
-                                    <span class="text-[13px] font-semibold">1200 sqft</span>
-                                </div>
-                            </div>
-                            <div class="grid grid-cols-2 grid-rows-2 w-fit gap-x-[30px] mb-[35px]">
-                                <p class="text-sm">Total Free Customer Care</p>
-                                <p class="text-sm">Need Live Support?</p>
-                                <a href="" class="text-[15px] font-semibold">+(0) 123 050 945 02</a>
-                                <a href="" class="text-[15px] font-semibold">hi@realton.com</a>
-                            </div>
-                            <div class="">
-                                <p class="font-semibold text-[20px]">$14,000 / mo</p>
                             </div>
                             <div
-                                class="absolute top-[-50px] right-0 bottom-[-50px] w-1/2 rounded-[12px] overflow-hidden">
-                                <img src="./images/Surface 1.png" alt="" class="h-full w-full object-cover">
+                                class="sm:h-auto h-[350px] lg:absolute lg:top-[-50px] right-0 lg:bottom-[-50px] sm:w-1/2 w-full lg:rounded-[12px] sm:rounded-tr-[12px] sm:rounded-br-[12px] sm:rounded-t-[0px] rounded-t-[12px] overflow-hidden">
+                                <img src="./images/Surface1.png" alt="" class="h-full w-full object-cover">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-between items-center w-1/6 ml-auto absolute pt-6">
+                <div class="flex justify-between items-center 2xl:w-1/6 lg:w-1/5 w-fit ml-auto absolute pt-6">
                     <div>
                         <img src="./images/arrow-right.png" alt="" class="cursor-pointer"
                             onclick="swiper4.slidePrev();">
                     </div>
-                    <div class="swiper-pagination my-auto w-auto static" style="width: auto;"></div>
+                    <div class="swiper-pagination my-auto w-auto static mb-[4px] lg:mx-[0px] mx-5" style="width: auto;"></div>
                     <div>
-                        <img src="./images/arrow-right (1).png" alt="" id="mynext" class="cursor-pointer"
+                        <img src="./images/arrow-right (1).png" alt="" class="cursor-pointer"
                             onclick="swiper4.slideNext();">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="lg:block hidden w-10/12 mx-auto py-[120px]">
-            <h3 class="text-[30px] font-semibold text-center">Membership Plans</h3>
+        <section class="md:w-10/12 w-11/12 mx-auto lg:pb-[120px] md:pb-[80px] mb-[40px] pt-[70px]">
+            <h3 class="md:text-[30px] text-[20px] font-semibold text-center">Membership Plans</h3>
             <p class="text-sm text-center">Aliquam lacinia diam quis lacus euismod</p>
-            <div class="mb-[60px] mt-[30px] w-fit flex items-center mx-auto">
+            <div class="md:mb-[60px] mb-[20px] mt-[30px] w-fit flex items-center mx-auto">
                 <div class="flex items-center">
                     <p class="text-sm mr-[10px]">Billed Monthly</p>
-                    
+
                 </div>
                 <div class="flex items-center">
                     <p class="text-sm mr-[10px]">Billed Yearly</p>
@@ -801,8 +876,9 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-x-[30px]">
-                <div class="py-[44px] px-[50px] border border-[#DDDDDD] rounded-[8px]">
+            <div class="grid xl:grid-cols-3 md:grid-cols-2 xl:gap-[30px] md:gap-[20px] gap-[10px]">
+                <div
+                    class="lg:py-[44px] md:py-[36px] py-[30px] lg:px-[50px] md:px-[40px] px-[30px] border border-[#DDDDDD] rounded-[8px]">
                     <div class="flex items-center justify-between mb-[60px]">
                         <div class="">
                             <h6 class="text-[20px] font-semibold">Basic</h6>
@@ -851,7 +927,8 @@
                         <img src="./images/right-up 1.png" alt="" class="">
                     </button>
                 </div>
-                <div class="py-[44px] px-[50px] bg-primary/[.07] rounded-[8px]">
+                <div
+                    class="lg:py-[44px] md:py-[36px] py-[30px] lg:px-[50px] md:px-[40px] px-[30px] bg-primary/[.07] rounded-[8px]">
                     <div class="flex items-center justify-between mb-[60px]">
                         <div class="">
                             <h6 class="text-[20px] font-semibold text-primary">Professional</h6>
@@ -901,7 +978,8 @@
                         <img src="./images/Group.png" alt="" class="">
                     </button>
                 </div>
-                <div class="py-[44px] px-[50px] border border-[#DDDDDD] rounded-[8px]">
+                <div
+                    class="lg:py-[44px] md:py-[36px] py-[30px] lg:px-[50px] md:px-[40px] px-[30px] border border-[#DDDDDD] rounded-[8px] xl:col-auto md:col-span-2 xl:justify-self-auto md:justify-self-center">
                     <div class="flex items-center justify-between mb-[60px]">
                         <div class="">
                             <h6 class="text-[20px] font-semibold">Business</h6>
@@ -954,20 +1032,22 @@
         </section>
 
 
-        <section class="lg:block hidden swiper5 pb-[120px] w-10/12 mx-auto overflow-hidden">
-            <div class="mb-[60px] flex items-baseline justify-between">
+        <section class="swiper5 lg:pb-[120px] pb-[80px] md:w-10/12 w-11/12 mx-auto overflow-hidden relative">
+            <div class="lg:mb-[60px] md:mb-[40px] mb-[20px] flex items-baseline justify-between">
                 <div>
-                    <h3 class="text-[30px] font-semibold">Our Exclusive Agetns</h3>
+                    <h3 class="md:text-[30px] text-[20px] font-semibold">Our Exclusive Agents</h3>
                     <p class="text-sm">Aliquam lacinia diam quis lacus euismod</p>
                 </div>
-                <div class="flex justify-between items-center w-1/6 ml-auto">
+                <div
+                    class="flex lg:static absolute lg:bottom-[80px] bottom-[40px] justify-between items-center 2xl:w-1/6 lg:w-1/5 w-fit ml-auto">
                     <div>
                         <img src="./images/arrow-right.png" alt="" class="cursor-pointer"
                             onclick="swiper5.slidePrev();">
                     </div>
-                    <div class="swiper-pagination my-auto w-auto static" style="width: auto;"></div>
+                    <div class="swiper-pagination my-auto w-auto static mb-[4px] lg:mx-[0px] mx-5" style="width: auto;">
+                    </div>
                     <div>
-                        <img src="./images/arrow-right (1).png" alt="" id="mynext" class="cursor-pointer"
+                        <img src="./images/arrow-right (1).png" alt="" class="cursor-pointer"
                             onclick="swiper5.slideNext();">
                     </div>
                 </div>
@@ -975,7 +1055,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide w-[270px] overflow-hidden">
                     <div class="mb-5 w-full h-[220px] rounded-full overflow-hidden">
-                        <img src="./images/Surface 1.png" alt="" class="w-full h-full object-cover">
+                        <img src="./images/Surface1.png" alt="" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h6 class="text-[15px] font-semibold text-center">Arlene McCoy</h6>
@@ -984,7 +1064,7 @@
                 </div>
                 <div class="swiper-slide w-[270px] overflow-hidden">
                     <div class="mb-5 w-full h-[220px] rounded-full overflow-hidden">
-                        <img src="./images/Surface 1.png" alt="" class="w-full h-full object-cover">
+                        <img src="./images/Surface1.png" alt="" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h6 class="text-[15px] font-semibold text-center">Arlene McCoy</h6>
@@ -993,7 +1073,7 @@
                 </div>
                 <div class="swiper-slide w-[270px] overflow-hidden">
                     <div class="mb-5 w-full h-[220px] rounded-full overflow-hidden">
-                        <img src="./images/Surface 1.png" alt="" class="w-full h-full object-cover">
+                        <img src="./images/Surface1.png" alt="" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h6 class="text-[15px] font-semibold text-center">Arlene McCoy</h6>
@@ -1002,7 +1082,7 @@
                 </div>
                 <div class="swiper-slide w-[270px] overflow-hidden">
                     <div class="mb-5 w-full h-[220px] rounded-full overflow-hidden">
-                        <img src="./images/Surface 1.png" alt="" class="w-full h-full object-cover">
+                        <img src="./images/Surface1.png" alt="" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h6 class="text-[15px] font-semibold text-center">Arlene McCoy</h6>
@@ -1011,7 +1091,7 @@
                 </div>
                 <div class="swiper-slide w-[270px] overflow-hidden">
                     <div class="mb-5 w-full h-[220px] rounded-full overflow-hidden">
-                        <img src="./images/Surface 1.png" alt="" class="w-full h-full object-cover">
+                        <img src="./images/Surface1.png" alt="" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h6 class="text-[15px] font-semibold text-center">Arlene McCoy</h6>
@@ -1020,7 +1100,7 @@
                 </div>
                 <div class="swiper-slide w-[270px] overflow-hidden">
                     <div class="mb-5 w-full h-[220px] rounded-full overflow-hidden">
-                        <img src="./images/Surface 1.png" alt="" class="w-full h-full object-cover">
+                        <img src="./images/Surface1.png" alt="" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h6 class="text-[15px] font-semibold text-center">Arlene McCoy</h6>
@@ -1029,7 +1109,7 @@
                 </div>
                 <div class="swiper-slide w-[270px] overflow-hidden">
                     <div class="mb-5 w-full h-[220px] rounded-full overflow-hidden">
-                        <img src="./images/Surface 1.png" alt="" class="w-full h-full object-cover">
+                        <img src="./images/Surface1.png" alt="" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h6 class="text-[15px] font-semibold text-center">Arlene McCoy</h6>
@@ -1038,7 +1118,7 @@
                 </div>
                 <div class="swiper-slide w-[270px] overflow-hidden">
                     <div class="mb-5 w-full h-[220px] rounded-full overflow-hidden">
-                        <img src="./images/Surface 1.png" alt="" class="w-full h-full object-cover">
+                        <img src="./images/Surface1.png" alt="" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h6 class="text-[15px] font-semibold text-center">Arlene McCoy</h6>
@@ -1048,24 +1128,29 @@
             </div>
         </section>
 
-        <section class="lg:block hidden bg-[#F8F8FF]">
-            <div class="w-10/12 mx-auto py-[110px] flex justify-between relative">
-                <div class="w-[60%]">
-                    <div>
-                        <img src="./images/iPhone X 3.png" alt="" class="absolute bottom-0 left-0">
-                        <img src="./images/iPhone X-1.png" alt="" class="absolute bottom-0 left-[184px]">
+        <section class="bg-[#F8F8FF]">
+            <div
+                class="md:w-10/12 w-11/12 mx-auto lg:py-[110px] md:py-[90px] py-[40px] flex lg:flex-row flex-col justify-between relative">
+                <h4 class="md:text-[30px] text-[20px] font-semibold mb-[7px] lg:hidden block text-center">Download the
+                    App</h4>
+                <div class="xl:w-[60%] lg:w-[50%] w-full lg:h-auto h-fit sm:block hidden">
+                    <div class="lg:block flex lg:overflow-visible overflow-hidden">
+                        <img src="./images/iPhone X 3.png" alt=""
+                            class="lg:absolute bottom-0 xl:left-0 lg:left-[-100px]">
+                        <img src="./images/iPhone X-1.png" alt=""
+                            class="lg:absolute bottom-0 xl:left-[184px] lg:left-[40px] lg:ml-0 lg:mt-0 ml-[-250px] mt-[135px]">
                     </div>
                 </div>
-                <div class="w-[40%]">
-                    <div class="bg-white py-[4px] px-[25px] rounded-[60px] w-fit mb-[27px]">
+                <div class="xl:w-[40%] lg:w-[50%] w-full lg:text-start text-center lg:mt-0 sm:mt-[40px] mt-[10px]">
+                    <div class="bg-white py-[4px] px-[25px] rounded-[60px] w-fit mb-[27px] lg:block hidden">
                         <p class="text-sm">Start today</p>
                     </div>
-                    <h4 class="text-[30px] font-semibold mb-[7px]">Download the App</h4>
+                    <h4 class="md:text-[30px] text-[20px] font-semibold mb-[7px] lg:block hidden">Download the App</h4>
                     <p class="text-sm">Take classes on the go with the realton app. Stream or download to watch on the
                         plane, the subway, or wherever you learn best.</p>
-                    <div class="mt-16 flex items-center">
+                    <div class="xl:mt-16 mt-8 flex sm:flex-row flex-col items-center lg:justify-start justify-center">
                         <button
-                            class="bg-[#0D1C39] rounded-[12px] flex items-center text-white py-[15px] px-5 mr-[30px]">
+                            class="bg-[#0D1C39] rounded-[12px] flex items-center text-white py-[15px] px-5 sm:mr-[30px] sm:mb-0 mb-[10px]">
                             <img src="./images/apple.png" alt="" class="mr-5">
                             <div class="bg-white/30 w-px h-[30px]"></div>
                             <div class="ml-5">
@@ -1086,15 +1171,15 @@
             </div>
         </section>
 
-        <footer class="bg-[#0D1C39] relative lg:block hidden">
-            <div class="w-10/12 mx-auto text-white py-[30px]">
-                <div class="flex justify-between items-center mb-[30px]">
-                    <a href="./index.html" class="flex items-center">
+        <footer class="bg-[#0D1C39] relative">
+            <div class="lg:w-10/12 sm:w-11/12 w-full sm:px-0 px-[5px] mx-auto text-white py-[30px]">
+                <div class="flex md:flex-row flex-col md:justify-between md:items-center md:mb-[30px] mb-[26px]">
+                    <a href="./index.html" class="flex items-center md:justify-start justify-center md:mb-0 mb-5">
                         <img src="./images/icon.png" alt="">
                         <h3 class="mb-0 text-[22px] font-semibold ml-[10px]">homez</h3>
                     </a>
-                    <div class="flex items-center">
-                        <p class="text-[15px] mr-[23px]">Follow us</p>
+                    <div class="flex md:flex-row flex-col md:items-center">
+                        <p class="text-[15px] md:mr-[23px] md:ml-0 ml-4">Follow us</p>
                         <div class="flex items-center">
                             <a href=""
                                 class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
@@ -1111,9 +1196,9 @@
                         </div>
                     </div>
                 </div>
-                <hr class="bg-white/[.1] border-white/[.1] h-px mb-[60px]">
+                <hr class="bg-white/[.1] border-white/[.1] h-px mb-[60px] md-block hidden">
                 <div class="flex justify-between mb-[60px]">
-                    <div class="grid grid-cols-3 gap-x-[20px] grow">
+                    <div class="md:grid hidden grid-cols-3 gap-x-[20px] grow">
                         <div>
                             <p class="text-[15px] mb-5">Popular Search</p>
                             <div class="text-sm text-[#BEBDBD]">
@@ -1145,24 +1230,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ml-12">
-                        <div class="grid grid-cols-2 grid-rows-2 w-fit gap-x-[30px] mb-[30px]">
+                    <div class="md:ml-12 sm:ml-4 ml-0">
+                        <div class="grid grid-cols-2 grid-rows-2 w-fit md:gap-x-[30px] gap-x-[10px] mb-[30px]">
                             <p class="text-sm text-[#BEBDBD] mb-2">Total Free Customer Care</p>
                             <p class="text-sm text-[#BEBDBD] mb-2">Need Live Support?</p>
                             <a href="" class="text-[15px] font-semibold">+(0) 123 050 945 02</a>
                             <a href="" class="text-[15px] font-semibold">hi@realton.com</a>
                         </div>
                         <p class="mb-5 text-[15px]">Keep Yourself Up to Date</p>
-                        <form class="py-[22px] px-[23px] bg-white rounded-[12px] flex justify-between items-center">
+                        <form
+                            class="py-[22px] px-[23px] bg-white rounded-[12px] flex justify-between items-center w-full">
                             <input type="email" name="" id="" placeholder="Your Email"
                                 class="bg-transparent grow mr-4 outline-none placeholder:text-[#181A20] text-sm text-[#181A20]">
                             <button class="text-[#181A20] text-[15px] font-semibold">Subscribe</button>
                         </form>
                     </div>
                 </div>
-                <hr class="bg-white/[.1] border-white/[.1] h-px mb-[60px]">
-                <div class="flex items-center justify-between text-[#BEBDBD]">
-                    <p class="text-sm">© Homez - All rights reserved</p>
+                <hr class="bg-white/[.1] border-white/[.1] h-px md:mb-[60px] mb-[20px]">
+                <div class="flex md:flex-row flex-col items-center md:justify-between justify-center text-[#BEBDBD]">
+                    <p class="text-sm md:mb-0 mb-[11px]">© Homez - All rights reserved</p>
                     <div class="flex items-center">
                         <a href="" class="mr-2 text-sm">Privacy</a>
                         <span class="block my-auto"> · </span>

@@ -5,9 +5,9 @@
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #000 !important;
-    width: 8px !important;
-    height: 8px !important;
+  background-color: #000 !important;
+  width: 8px !important;
+  height: 8px !important;
 }
 
 .swiper-pagination-bullet {
@@ -15,10 +15,16 @@
   height: 6px;
 }
 
-.swiper3 .swiper-slide {
-  width: 70px !important;
-}
-
 .swiper3 .swiper-wrapper {
   transition-timing-function: linear;
-  }
+}
+
+.swiper3 .swiper-pagination-bullet {
+  width: 70px;
+  height: 70px;
+}
+
+.swiper3 .swiper-pagination-bullet-active {
+  width: 70px !important;
+  height: 70px !important;
+}
