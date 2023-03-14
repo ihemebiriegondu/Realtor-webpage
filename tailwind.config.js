@@ -3,13 +3,16 @@ module.exports = {
   content: [
     "./public/**/*.{html,js}",
     "./index.html",
-    "./listing.html"
+    "./listings.html"
   ],
   theme: {
     extend: {
       colors: {
         'primary': '#EB6753'
       },
+      screens: {
+        'xs': '425px'
+      }
     },
   },
   plugins: [],
