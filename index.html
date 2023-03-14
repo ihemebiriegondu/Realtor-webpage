@@ -74,8 +74,8 @@
             <!--Offcanvas for smaller screen sizes-->
             <div class="absolute top-0 bottom-0 left-0 right-0 w-full z-50 bg-black/[.5] lg:invisible invisible transition-all duration-300 ease-in-out"
                 id="menuOffcanvas">
-                <nav
-                    class="flex justify-between flex-col divide-y h-screen overflow-y-scroll absolute top-0 bottom-0 right-0 bg-white shadow-[0px_10px_40px_rgba(24,26,32,0.05)] md:w-1/2 sm:w-3/4 w-full">
+                <nav class="flex justify-between flex-col divide-y h-screen overflow-y-scroll absolute top-0 bottom-0 right-0 transition-all duration-300 ease-in-out bg-white shadow-[0px_10px_40px_rgba(24,26,32,0.05)] md:w-1/2 sm:w-3/4 w-full w-0"
+                    id="menu">
                     <div class="flex flex-col divide-y divide-[#DDDDDD] pb-[240px]">
                         <div class="flex items-center justify-between py-[25px] px-[30px]">
                             <h3 class="text-[20px] font-semibold">Welcome to Realton</h3>
@@ -1333,152 +1333,148 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <footer class="bg-[#0D1C39] relative overflow-x-hidden">
-            <div class="lg:w-10/12 xs:w-11/12 w-full xs:px-0 px-[10px] mx-auto text-white py-[30px]">
-                <div class="flex md:flex-row flex-col md:justify-between md:items-center md:mb-[30px] mb-[26px]">
-                    <a href="index.html" class="flex items-center md:justify-start justify-center md:mb-0 mb-5">
-                        <img src="/public/images/icon.png" alt="">
-                        <h3 class="mb-0 text-[22px] font-semibold ml-[10px]">homez</h3>
-                    </a>
-                    <div class="flex md:flex-row flex-col md:items-center">
-                        <p class="text-[15px] md:mr-[23px] md:ml-0 ml-4">Follow us</p>
-                        <div class="flex items-center">
-                            <a href=""
-                                class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
-                                    src="/public/images/facebook (2).png" alt=""></a>
-                            <a href=""
-                                class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
-                                    src="/public/images/twitter (2).png" alt=""></a>
-                            <a href=""
-                                class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
-                                    src="/public/images/insta.png" alt=""></a>
-                            <a href=""
-                                class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
-                                    src="/public/images/linkedin (2).png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <hr class="bg-white/[.1] border-white/[.1] h-px mb-[60px] md-block hidden">
-                <div class="flex justify-between mb-[60px]">
-                    <!--Footer links for large screens-->
-                    <div class="md:grid hidden grid-cols-3 gap-x-[20px] grow">
-                        <div>
-                            <p class="text-[15px] mb-5">Popular Search</p>
-                            <div class="text-sm text-[#BEBDBD]">
-                                <p class="mb-4">Apartment for Rent</p>
-                                <p class="mb-4">Apartment Low to hide</p>
-                                <p class="mb-4">Offices for Buy</p>
-                                <p class="mb-4">Offices for Rent</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[15px] mb-5">Quick Links</p>
-                            <div class="text-sm text-[#BEBDBD]">
-                                <p class="mb-4">Terms of Use</p>
-                                <p class="mb-4">Privacy Policy</p>
-                                <p class="mb-4">Pricing Plans</p>
-                                <p class="mb-4">Our Services</p>
-                                <p class="mb-4">Contact Support</p>
-                                <p class="mb-4">Careers</p>
-                                <p class="mb-4">FAQs</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[15px] mb-5">Discover</p>
-                            <div class="text-sm text-[#BEBDBD]">
-                                <p class="mb-4">Miami</p>
-                                <p class="mb-4">Los Angeles</p>
-                                <p class="mb-4">Chicago</p>
-                                <p class="mb-4">New York</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:ml-12 xs:ml-4 ml-0">
-                        <div
-                            class="grid grid-cols-2 grid-rows-2 w-fit md:gap-x-[30px] xs:gap-x-[20px] gap-x-[10px] mb-[30px]">
-                            <p class="text-sm text-[#BEBDBD] mb-2">Total Free Customer Care</p>
-                            <p class="text-sm text-[#BEBDBD] mb-2">Need Live Support?</p>
-                            <a href="" class="text-[15px] font-semibold">+(0) 123 050 945 02</a>
-                            <a href="" class="text-[15px] font-semibold">hi@realton.com</a>
-                        </div>
-                        <p class="mb-5 text-[15px]">Keep Yourself Up to Date</p>
-                        <form
-                            class="py-[22px] xs:px-[23px] xs:bg-white xs:rounded-[12px] flex xs:flex-row flex-col xs:justify-between justify-center xs:items-center w-full">
-                            <input type="email" name="" id="" placeholder="Your Email"
-                                class="xs:bg-transparent bg-white xs:grow xs:mr-4 xs-rounded-none rounded-[12px] xs:px-0 px-[10px] xs:py-0 py-[22px] xs:mb-0 mb-[10px] outline-none placeholder:text-[#181A20] text-sm text-[#181A20]">
-                            <button
-                                class="text-[#181A20] text-[15px] sm:mt-0 mb-2 font-semibold xs:block hidden">Subscribe</button>
-                            <button
-                                class="xs:hidden block bg-primary hover:bg-primary/[.7] text-white hover:text-black text-sm font-semibold transition duration-300 ease-in-out py-[19px] px-[18px] rounded-[12px] w-full">
-                                Subscribe
-                            </button>
-                        </form>
-                        <!--Footer links for smaller screens-->
-                        <div class="md:hidden block mt-5">
-                            <div class="mb-[10px]">
-                                <div class="flex items-center mb-[10px]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                        class="w-5 h-5 mr-[10px] hidden">
-                                        <path fill-rule="evenodd"
-                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                        class="w-5 h-5 mr-[10px]">
-                                        <path fill-rule="evenodd"
-                                            d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    <p class="text-[15px] font-semibold">Popular Search</p>
-                                </div>
-                                <ul class="text-sm text-[#BEBDBD] ml-[30px]">
-                                    <li class="mb-[20px]"><a href="">Apartment for Rent</a></li>
-                                    <li class="mb-[20px]"><a href="">Apartment Low to hide</a></li>
-                                    <li class="mb-[20px]"><a href="">Offices for Buy</a></li>
-                                    <li class="mb-[20px]"><a href="">Offices for Rent</a></li>
-                                </ul>
-                            </div>
-                            <div class="flex items-center mb-[10px]">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="w-5 h-5 mr-[10px]">
-                                    <path fill-rule="evenodd"
-                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p class="text-[15px] font-semibold">Quick Links</p>
-                            </div>
-                            <div class="flex items-center mb-[10px]">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="w-5 h-5 mr-[10px]">
-                                    <path fill-rule="evenodd"
-                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p class="text-[15px] font-semibold">Discover</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="bg-white/[.1] border-white/[.1] h-px md:mb-[60px] mb-[20px]">
-                <div class="flex md:flex-row flex-col items-center md:justify-between justify-center text-[#BEBDBD]">
-                    <p class="text-sm md:mb-0 mb-[11px]">© Homez - All rights reserved</p>
+    <footer class="bg-[#0D1C39] relative overflow-x-hidden">
+        <div class="lg:w-10/12 xs:w-11/12 w-full xs:px-0 px-[10px] mx-auto text-white py-[30px]">
+            <div class="flex md:flex-row flex-col md:justify-between md:items-center md:mb-[30px] mb-[26px]">
+                <a href="index.html" class="flex items-center md:justify-start justify-center md:mb-0 mb-5">
+                    <img src="/public/images/icon.png" alt="">
+                    <h3 class="mb-0 text-[22px] font-semibold ml-[10px]">homez</h3>
+                </a>
+                <div class="flex md:flex-row flex-col md:items-center">
+                    <p class="text-[15px] md:mr-[23px] md:ml-0 ml-4">Follow us</p>
                     <div class="flex items-center">
-                        <a href="" class="mr-2 text-sm">Privacy</a>
-                        <span class="block my-auto"> · </span>
-                        <a href="" class="mr-2 ml-2 text-sm">Terms</a>
-                        <span class="block my-auto"> · </span>
-                        <a href="" class="ml-2 text-sm">Sitemap</a>
+                        <a href=""
+                            class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
+                                src="/public/images/facebook (2).png" alt=""></a>
+                        <a href=""
+                            class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
+                                src="/public/images/twitter (2).png" alt=""></a>
+                        <a href=""
+                            class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
+                                src="/public/images/insta.png" alt=""></a>
+                        <a href=""
+                            class="py-[13px] px-[16px] transition duration-500 ease-in-out hover:bg-white/[.05] hover:ease-in-out hover:duration-500 rounded-full mr-6"><img
+                                src="/public/images/linkedin (2).png" alt=""></a>
                     </div>
                 </div>
             </div>
-            <img src="/public/images/700 1.png" alt="" class="absolute bottom-0 left-[-40px]">
-        </footer>
-
-
-    </main>
-
-
+            <hr class="bg-white/[.1] border-white/[.1] h-px mb-[60px] md-block hidden">
+            <div class="flex justify-between mb-[60px]">
+                <!--Footer links for large screens-->
+                <div class="md:grid hidden grid-cols-3 gap-x-[20px] grow">
+                    <div>
+                        <p class="text-[15px] mb-5">Popular Search</p>
+                        <div class="text-sm text-[#BEBDBD]">
+                            <p class="mb-4">Apartment for Rent</p>
+                            <p class="mb-4">Apartment Low to hide</p>
+                            <p class="mb-4">Offices for Buy</p>
+                            <p class="mb-4">Offices for Rent</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[15px] mb-5">Quick Links</p>
+                        <div class="text-sm text-[#BEBDBD]">
+                            <p class="mb-4">Terms of Use</p>
+                            <p class="mb-4">Privacy Policy</p>
+                            <p class="mb-4">Pricing Plans</p>
+                            <p class="mb-4">Our Services</p>
+                            <p class="mb-4">Contact Support</p>
+                            <p class="mb-4">Careers</p>
+                            <p class="mb-4">FAQs</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[15px] mb-5">Discover</p>
+                        <div class="text-sm text-[#BEBDBD]">
+                            <p class="mb-4">Miami</p>
+                            <p class="mb-4">Los Angeles</p>
+                            <p class="mb-4">Chicago</p>
+                            <p class="mb-4">New York</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:ml-12 xs:ml-4 ml-0">
+                    <div
+                        class="grid grid-cols-2 grid-rows-2 w-fit md:gap-x-[30px] xs:gap-x-[20px] gap-x-[10px] mb-[30px]">
+                        <p class="text-sm text-[#BEBDBD] mb-2">Total Free Customer Care</p>
+                        <p class="text-sm text-[#BEBDBD] mb-2">Need Live Support?</p>
+                        <a href="" class="text-[15px] font-semibold">+(0) 123 050 945 02</a>
+                        <a href="" class="text-[15px] font-semibold">hi@realton.com</a>
+                    </div>
+                    <p class="mb-5 text-[15px]">Keep Yourself Up to Date</p>
+                    <form
+                        class="py-[22px] xs:px-[23px] xs:bg-white xs:rounded-[12px] flex xs:flex-row flex-col xs:justify-between justify-center xs:items-center w-full">
+                        <input type="email" name="" id="" placeholder="Your Email"
+                            class="xs:bg-transparent bg-white xs:grow xs:mr-4 xs-rounded-none rounded-[12px] xs:px-0 px-[10px] xs:py-0 py-[22px] xs:mb-0 mb-[10px] outline-none placeholder:text-[#181A20] text-sm text-[#181A20]">
+                        <button
+                            class="text-[#181A20] text-[15px] sm:mt-0 mb-2 font-semibold xs:block hidden">Subscribe</button>
+                        <button
+                            class="xs:hidden block bg-primary hover:bg-primary/[.7] text-white hover:text-black text-sm font-semibold transition duration-300 ease-in-out py-[19px] px-[18px] rounded-[12px] w-full">
+                            Subscribe
+                        </button>
+                    </form>
+                    <!--Footer links for smaller screens-->
+                    <div class="md:hidden block mt-5">
+                        <div class="mb-[10px]">
+                            <div class="flex items-center mb-[10px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5 mr-[10px] hidden">
+                                    <path fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5 mr-[10px]">
+                                    <path fill-rule="evenodd"
+                                        d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <p class="text-[15px] font-semibold">Popular Search</p>
+                            </div>
+                            <ul class="text-sm text-[#BEBDBD] ml-[30px]">
+                                <li class="mb-[20px]"><a href="">Apartment for Rent</a></li>
+                                <li class="mb-[20px]"><a href="">Apartment Low to hide</a></li>
+                                <li class="mb-[20px]"><a href="">Offices for Buy</a></li>
+                                <li class="mb-[20px]"><a href="">Offices for Rent</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center mb-[10px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 mr-[10px]">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p class="text-[15px] font-semibold">Quick Links</p>
+                        </div>
+                        <div class="flex items-center mb-[10px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 mr-[10px]">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p class="text-[15px] font-semibold">Discover</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white/[.1] border-white/[.1] h-px md:mb-[60px] mb-[20px]">
+            <div class="flex md:flex-row flex-col items-center md:justify-between justify-center text-[#BEBDBD]">
+                <p class="text-sm md:mb-0 mb-[11px]">© Homez - All rights reserved</p>
+                <div class="flex items-center">
+                    <a href="" class="mr-2 text-sm">Privacy</a>
+                    <span class="block my-auto"> · </span>
+                    <a href="" class="mr-2 ml-2 text-sm">Terms</a>
+                    <span class="block my-auto"> · </span>
+                    <a href="" class="ml-2 text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+        <img src="/public/images/700 1.png" alt="" class="absolute bottom-0 left-[-40px]">
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

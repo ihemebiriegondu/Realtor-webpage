@@ -77,7 +77,6 @@ const swiper2 = new Swiper('.swiper2', {
     }
 });
 
-var menu = ['Slide 1', 'Slide 2', 'Slide 3']
 const swiper3 = new Swiper('.swiper3', {
     direction: 'horizontal',
     loop: true,

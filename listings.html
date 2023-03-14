@@ -45,9 +45,6 @@
                         <p class="mr-[10px] text-sm font-semibold">Add Property</p>
                         <img src="/public/images/right-up 1 (1).png" alt="">
                     </button>
-                    <div class="lg:block hidden">
-                        <img class="cursor-pointer" src="/public/images/nav-icon (1).png" alt="">
-                    </div>
                 </div>
                 <div class="w-[18px] h-[18px] lg:hidden block">
                     <img src="/public/images/user (1) 1 (1).png" class="mr-[10px] w-full h-full object-cover" alt="">
@@ -57,8 +54,8 @@
             <!--Offcanvas for smaller screen sizes-->
             <div class="absolute top-0 bottom-0 left-0 right-0 w-full z-50 bg-black/[.5] lg:invisible invisible transition-all duration-300 ease-in-out"
                 id="menuOffcanvas2">
-                <nav
-                    class="flex justify-between flex-col divide-y h-screen overflow-y-scroll absolute top-0 bottom-0 right-0 bg-white shadow-[0px_10px_40px_rgba(24,26,32,0.05)] md:w-1/2 sm:w-3/4 w-full">
+                <nav class="flex justify-between flex-col divide-y h-screen overflow-y-scroll absolute top-0 bottom-0 right-0 bg-white transition-all duration-300 ease-in-out shadow-[0px_10px_40px_rgba(24,26,32,0.05)] md:w-1/2 sm:w-3/4 w-full w-0"
+                    id="menu2">
                     <div class="flex flex-col divide-y divide-[#DDDDDD] pb-[240px]">
                         <div class="flex items-center justify-between py-[25px] px-[30px]">
                             <h3 class="text-[20px] font-semibold">Welcome to Realton</h3>
@@ -70,7 +67,7 @@
                             <ul class="flex flex-col text-[15px] font-semibold">
                                 <li
                                     class="px-[30px] py-[20px] border-l-[2px] border-white flex items-center justify-between cursor-pointer">
-                                    <p class="text-primary">Home</p>
+                                    <a href="/index.html" class="">Home</a>
                                     <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" class="icon icon-chevron-right"
                                         viewBox="0 0 24 24" aria-hidden="true">
                                         <path
@@ -79,7 +76,7 @@
                                 </li>
                                 <li
                                     class="px-[30px] py-[20px] border-l-[2px] border-primary bg-primary/[.07] flex items-center justify-between cursor-pointer">
-                                    <a href="listings.html" class="">Listing</a>
+                                    <a href="/listings.html" class="text-primary">Listing</a>
                                     <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" class="icon icon-chevron-right"
                                         viewBox="0 0 24 24" aria-hidden="true">
                                         <path
@@ -146,7 +143,7 @@
             <div>
                 <section class="grid lg:grid-cols-3 grid-cols-2 xl:gap-x-[50px] gap-x-[30px]">
                     <aside
-                        class="bg-white rounded-[12px] shadow-[0px_1px_4px_rgba(24,26,32,0.07)] lg:block hidden xl:px-[30px] lg:px-[20px] xl:py-[30px] h-fit">
+                        class="bg-white rounded-[12px] shadow-[0px_1px_4px_rgba(24,26,32,0.07)] lg:block hidden xl:px-[30px] lg:px-[20px] py-[30px] h-fit">
                         <p class="text-[15px] font-semibold mb-5">Find your home</p>
                         <div class="border border-[#DDDDDD] rounded-[8px] flex items-center p-[15px] mb-[30px]">
                             <img src="/public/images/search (1) 1 (1).png" alt="" class="mr-[10px]">
@@ -197,7 +194,12 @@
                             </div>
                         </div>
                         <p class="text-[15px] font-semibold mb-5">Price Range</p>
-                        <div></div>
+                        <div class="mb-[15px]">
+                            <input type="range" min="300" max="100000" name="price-range" id="" class="w-full h-[3px] rounded-[30px] appearance-none cursor-pointer dark:bg-[#181A20]
+                                [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-[29px] 
+                                [&::-webkit-slider-thumb]:w-[29px] [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[url('/public/images/bg.png')]
+                                ">
+                        </div>
                         <div class="flex items-center justify-between w-full mb-[30px]">
                             <input type="number" placeholder="$ min."
                                 class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
@@ -206,41 +208,45 @@
                                 class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
                         </div>
                         <p class="text-[15px] font-semibold mb-5">Bedrooms</p>
-                        <div class="overflow-hidden flex items-center mb-[30px]">
+                        <div class="overflow-hidden flex items-center mb-[30px] w-full">
                             <p
-                                class="text-[13px] text-[#181A20] border-2 border-[#181A20] py-[12px] px-[17px] rounded-tl-[12px] rounded-bl-[12px]">
+                                class="grow text-[13px] text-[#181A20] border-2 border-[#181A20] py-[12px] flex items-center justify-center px-auto rounded-tl-[12px] rounded-bl-[12px]">
                                 Any</p>
-                            <p class="text-[13px] text-[#181A20] border-2 border-[#DDDDDD] py-[12px] px-[17px]">1+</p>
                             <p
-                                class="text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] px-[17px]">
+                                class="grow text-[13px] text-[#181A20] border-2 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
+                                1+</p>
+                            <p
+                                class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
                                 2+</p>
                             <p
-                                class="text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] px-[17px]">
+                                class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
                                 3+</p>
                             <p
-                                class="text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] px-[17px]">
+                                class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
                                 4+</p>
                             <p
-                                class="text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] px-[17px]">
+                                class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] rounded-tr-[12px] rounded-br-[12px] py-[12px] flex items-center justify-center px-auto">
                                 5+</p>
                         </div>
                         <p class="text-[15px] font-semibold mb-5">Bathrooms</p>
-                        <div class="overflow-hidden flex items-center mb-[30px]">
+                        <div class="overflow-hidden flex items-center mb-[30px] w-full">
                             <p
-                                class="text-[13px] text-[#181A20] border-2 border-[#181A20] py-[12px] px-[17px] rounded-tl-[12px] rounded-bl-[12px]">
+                                class="grow text-[13px] text-[#181A20] border-2 border-[#181A20] py-[12px] flex items-center justify-center px-auto rounded-tl-[12px] rounded-bl-[12px]">
                                 Any</p>
-                            <p class="text-[13px] text-[#181A20] border-2 border-[#DDDDDD] py-[12px] px-[17px]">1+</p>
                             <p
-                                class="text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] px-[17px]">
+                                class="grow text-[13px] text-[#181A20] border-2 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
+                                1+</p>
+                            <p
+                                class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
                                 2+</p>
                             <p
-                                class="text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] px-[17px]">
+                                class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
                                 3+</p>
                             <p
-                                class="text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] px-[17px]">
+                                class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
                                 4+</p>
                             <p
-                                class="text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] px-[17px]">
+                                class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] rounded-tr-[12px] rounded-br-[12px] py-[12px] flex items-center justify-center px-auto">
                                 5+</p>
                         </div>
                         <p class="text-[15px] font-semibold mb-5">Location</p>
@@ -352,7 +358,15 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -386,84 +400,15 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
-                                    <div class="h-[240px] relative">
-                                        <img src="/public/images/Surface1.png" alt="" class="h-full w-full">
-                                        <div
-                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
-                                            <img src="/public/images/Vector (7).png" alt="" class="">
-                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
-                                        </div>
-                                        <div
-                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
-                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
-                                        </div>
-                                    </div>
-                                    <div class="pt-5 pb-4 xl:px-5 px-4">
-                                        <div class="mb-[15px]">
-                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
-                                            <p class="text-[13px]">California City, CA, USA</p>
-                                        </div>
-                                        <div class="flex items-center mb-[15px]">
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (4).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">3 bed</span>
-                                            </p>
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (5).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">4 bath</span>
-                                            </p>
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (6).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">1200 sqft</span>
-                                            </p>
-                                        </div>
-                                        <hr class="h-px mb-[17px]">
-                                        <div class="flex items-center justify-between">
-                                            <p class="text-[13px]">For Rent</p>
-                                            <div class="flex items-center">
-                                                <img src="/public/images/save (2).png" alt="">
-                                                <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
-                                    <div class="h-[240px] relative">
-                                        <img src="/public/images/Surface1.png" alt="" class="h-full w-full">
-                                    </div>
-                                    <div class="pt-5 pb-4 xl:px-5 px-4">
-                                        <div class="mb-[15px]">
-                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
-                                            <p class="text-[13px]">California City, CA, USA</p>
-                                        </div>
-                                        <div class="flex items-center mb-[15px]">
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (4).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">3 bed</span>
-                                            </p>
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (5).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">4 bath</span>
-                                            </p>
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (6).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">1200 sqft</span>
-                                            </p>
-                                        </div>
-                                        <hr class="h-px mb-[17px]">
-                                        <div class="flex items-center justify-between">
-                                            <p class="text-[13px]">For Rent</p>
-                                            <div class="flex items-center">
-                                                <img src="/public/images/save (2).png" alt="">
-                                                <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -506,7 +451,15 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -540,7 +493,15 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -583,7 +544,15 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -617,7 +586,108 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="/public/images/Surface1.png" alt="" class="h-full w-full">
+                                        <div
+                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
+                                            <img src="/public/images/Vector (7).png" alt="" class="">
+                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                        </div>
+                                        <div
+                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
+                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="/public/images/save (2).png" alt="">
+                                                <img src="/public/images/save.png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="/public/images/Surface1.png" alt="" class="h-full w-full">
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="/public/images/save (2).png" alt="">
+                                                <img src="/public/images/save.png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -662,7 +732,15 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -696,84 +774,15 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
-                                    <div class="h-[240px] relative">
-                                        <img src="/public/images/Surface1.png" alt="" class="h-full w-full">
-                                        <div
-                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
-                                            <img src="/public/images/Vector (7).png" alt="" class="">
-                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
-                                        </div>
-                                        <div
-                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
-                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
-                                        </div>
-                                    </div>
-                                    <div class="pt-5 pb-4 xl:px-5 px-4">
-                                        <div class="mb-[15px]">
-                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
-                                            <p class="text-[13px]">California City, CA, USA</p>
-                                        </div>
-                                        <div class="flex items-center mb-[15px]">
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (4).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">3 bed</span>
-                                            </p>
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (5).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">4 bath</span>
-                                            </p>
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (6).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">1200 sqft</span>
-                                            </p>
-                                        </div>
-                                        <hr class="h-px mb-[17px]">
-                                        <div class="flex items-center justify-between">
-                                            <p class="text-[13px]">For Rent</p>
-                                            <div class="flex items-center">
-                                                <img src="/public/images/save (2).png" alt="">
-                                                <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
-                                    <div class="h-[240px] relative">
-                                        <img src="/public/images/Surface1.png" alt="" class="h-full w-full">
-                                    </div>
-                                    <div class="pt-5 pb-4 xl:px-5 px-4">
-                                        <div class="mb-[15px]">
-                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
-                                            <p class="text-[13px]">California City, CA, USA</p>
-                                        </div>
-                                        <div class="flex items-center mb-[15px]">
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (4).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">3 bed</span>
-                                            </p>
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (5).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">4 bath</span>
-                                            </p>
-                                            <p class="flex items-center mr-[23px]">
-                                                <img src="/public/images/Vector (6).png" alt="" class="mr-[5px]">
-                                                <span class="text-[13px]">1200 sqft</span>
-                                            </p>
-                                        </div>
-                                        <hr class="h-px mb-[17px]">
-                                        <div class="flex items-center justify-between">
-                                            <p class="text-[13px]">For Rent</p>
-                                            <div class="flex items-center">
-                                                <img src="/public/images/save (2).png" alt="">
-                                                <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -816,7 +825,15 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -850,7 +867,15 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -893,7 +918,15 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -927,7 +960,108 @@
                                             <div class="flex items-center">
                                                 <img src="/public/images/save (2).png" alt="">
                                                 <img src="/public/images/save.png" alt="">
-                                                <img src="/public/images/save (1).png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="/public/images/Surface1.png" alt="" class="h-full w-full">
+                                        <div
+                                            class="bg-primary text-white rounded-[6px] flex items-center w-fit py-[6px] px-[11px] absolute top-5 left-5">
+                                            <img src="/public/images/Vector (7).png" alt="" class="">
+                                            <p class="text-xs ml-[7.44px]">FEATURED</p>
+                                        </div>
+                                        <div
+                                            class="bg-white text-black rounded-[6px] flex items-center w-fit py-[8px] px-[15px] absolute bottom-5 left-5">
+                                            <p class="text-[15px]"><span class="font-semibold">$14,000</span> / mo</p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="/public/images/save (2).png" alt="">
+                                                <img src="/public/images/save.png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rounded-[12px] border border-[#DDDDDD] overflow-hidden bg-white h-fit">
+                                    <div class="h-[240px] relative">
+                                        <img src="/public/images/Surface1.png" alt="" class="h-full w-full">
+                                    </div>
+                                    <div class="pt-5 pb-4 xl:px-5 px-4">
+                                        <div class="mb-[15px]">
+                                            <h6 class="text-[15px] font-semibold mb-[5px]">Equestrian Family Home</h6>
+                                            <p class="text-[13px]">California City, CA, USA</p>
+                                        </div>
+                                        <div class="flex items-center mb-[15px]">
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (4).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">3 bed</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (5).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">4 bath</span>
+                                            </p>
+                                            <p class="flex items-center mr-[23px]">
+                                                <img src="/public/images/Vector (6).png" alt="" class="mr-[5px]">
+                                                <span class="text-[13px]">1200 sqft</span>
+                                            </p>
+                                        </div>
+                                        <hr class="h-px mb-[17px]">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-[13px]">For Rent</p>
+                                            <div class="flex items-center">
+                                                <img src="/public/images/save (2).png" alt="">
+                                                <img src="/public/images/save.png" alt="">
+                                                <div
+                                                    class="bg-[#F7F7F7] rounded-[6px] py-[6px] px-[10px] cursor-pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-4 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -958,8 +1092,8 @@
         </div>
     </main>
 
-    <footer class="bg-[#0D1C39] relative">
-        <div class="lg:w-10/12 sm:w-11/12 w-full sm:px-0 px-[5px] mx-auto text-white py-[30px]">
+    <footer class="bg-[#0D1C39] relative overflow-x-hidden">
+        <div class="lg:w-10/12 xs:w-11/12 w-full xs:px-0 px-[10px] mx-auto text-white py-[30px]">
             <div class="flex md:flex-row flex-col md:justify-between md:items-center md:mb-[30px] mb-[26px]">
                 <a href="index.html" class="flex items-center md:justify-start justify-center md:mb-0 mb-5">
                     <img src="/public/images/icon.png" alt="">
@@ -985,6 +1119,7 @@
             </div>
             <hr class="bg-white/[.1] border-white/[.1] h-px mb-[60px] md-block hidden">
             <div class="flex justify-between mb-[60px]">
+                <!--Footer links for large screens-->
                 <div class="md:grid hidden grid-cols-3 gap-x-[20px] grow">
                     <div>
                         <p class="text-[15px] mb-5">Popular Search</p>
@@ -1017,19 +1152,70 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:ml-12 sm:ml-4 ml-0">
-                    <div class="grid grid-cols-2 grid-rows-2 w-fit md:gap-x-[30px] gap-x-[10px] mb-[30px]">
+                <div class="md:ml-12 xs:ml-4 ml-0">
+                    <div
+                        class="grid grid-cols-2 grid-rows-2 w-fit md:gap-x-[30px] xs:gap-x-[20px] gap-x-[10px] mb-[30px]">
                         <p class="text-sm text-[#BEBDBD] mb-2">Total Free Customer Care</p>
                         <p class="text-sm text-[#BEBDBD] mb-2">Need Live Support?</p>
                         <a href="" class="text-[15px] font-semibold">+(0) 123 050 945 02</a>
                         <a href="" class="text-[15px] font-semibold">hi@realton.com</a>
                     </div>
                     <p class="mb-5 text-[15px]">Keep Yourself Up to Date</p>
-                    <form class="py-[22px] sm:px-[23px] px-[10px] bg-white rounded-[12px] flex justify-between items-center w-full">
+                    <form
+                        class="py-[22px] xs:px-[23px] xs:bg-white xs:rounded-[12px] flex xs:flex-row flex-col xs:justify-between justify-center xs:items-center w-full">
                         <input type="email" name="" id="" placeholder="Your Email"
-                            class="bg-transparent grow mr-4 outline-none placeholder:text-[#181A20] text-sm text-[#181A20]">
-                        <button class="text-[#181A20] text-[15px] font-semibold">Subscribe</button>
+                            class="xs:bg-transparent bg-white xs:grow xs:mr-4 xs-rounded-none rounded-[12px] xs:px-0 px-[10px] xs:py-0 py-[22px] xs:mb-0 mb-[10px] outline-none placeholder:text-[#181A20] text-sm text-[#181A20]">
+                        <button
+                            class="text-[#181A20] text-[15px] sm:mt-0 mb-2 font-semibold xs:block hidden">Subscribe</button>
+                        <button
+                            class="xs:hidden block bg-primary hover:bg-primary/[.7] text-white hover:text-black text-sm font-semibold transition duration-300 ease-in-out py-[19px] px-[18px] rounded-[12px] w-full">
+                            Subscribe
+                        </button>
                     </form>
+                    <!--Footer links for smaller screens-->
+                    <div class="md:hidden block mt-5">
+                        <div class="mb-[10px]">
+                            <div class="flex items-center mb-[10px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5 mr-[10px] hidden">
+                                    <path fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5 mr-[10px]">
+                                    <path fill-rule="evenodd"
+                                        d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <p class="text-[15px] font-semibold">Popular Search</p>
+                            </div>
+                            <ul class="text-sm text-[#BEBDBD] ml-[30px]">
+                                <li class="mb-[20px]"><a href="">Apartment for Rent</a></li>
+                                <li class="mb-[20px]"><a href="">Apartment Low to hide</a></li>
+                                <li class="mb-[20px]"><a href="">Offices for Buy</a></li>
+                                <li class="mb-[20px]"><a href="">Offices for Rent</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center mb-[10px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 mr-[10px]">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p class="text-[15px] font-semibold">Quick Links</p>
+                        </div>
+                        <div class="flex items-center mb-[10px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 mr-[10px]">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p class="text-[15px] font-semibold">Discover</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr class="bg-white/[.1] border-white/[.1] h-px md:mb-[60px] mb-[20px]">
@@ -1046,6 +1232,7 @@
         </div>
         <img src="/public/images/700 1.png" alt="" class="absolute bottom-0 left-[-40px]">
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/public/js/swiper.js"></script>
     <script src="/public/js/offcanvas.js"></script>
