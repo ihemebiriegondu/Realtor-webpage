@@ -38,6 +38,10 @@
   background-color: #EB6753 !important;
 }
 
+
+
+
+
 @media (max-width:1024px) {
   .swiper3 .swiper-pagination-bullet {
     width: 50px;

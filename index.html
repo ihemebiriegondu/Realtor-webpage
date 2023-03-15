@@ -31,10 +31,10 @@
                         </li>
                         <li class="px-2 mx-2 pb-[11px]">
                             <div class="flex items-center justify-between cursor-pointer dropDownBtn"
-                                onclick="showListingDropDown()">
-                                <p>Listings</p>
-                                <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                onclick="showListingDropDown()" id="listingBtn">
+                                <p class="dropDownBtn">Listings</p>
+                                <svg class="w-4 h-4 ml-2 dropDownBtn" aria-hidden="true" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>
@@ -63,21 +63,46 @@
                                     Elements</a>
                             </div>
                         </li>
-                        <li class="px-2 mx-2 pb-[11px] flex items-center justify-between cursor-pointer">
-                            <p>Property</p>
-                            <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
+                        <li class="px-2 mx-2 pb-[11px]">
+                            <div class="flex items-center justify-between cursor-pointer dropDownBtn"
+                                onclick="showPropertyDropDown()" id="">
+                                <p class="dropDownBtn">Property</p>
+                                <svg class="w-4 h-4 ml-2 dropDownBtn" aria-hidden="true" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                            <div id="propertyDropDown1"
+                                class="allTopNavDropDown absolute hidden text-sm text-[#181A20] py-[10px] flex flex-col font-normal bg-white top-[75px] rounded-[12px] shadow-[0px_10px_40px_rgba(24,26,32,0.05)] pt-[30px]">
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">About</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Contact</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Compare</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Pricing</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Faq</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Login</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">404</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Invoice</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">UI
+                                    Elements</a>
+                            </div>
                         </li>
                         <li class="px-2 mx-2"><a href="" class="">Blog</a></li>
                         <li class="px-2 mx-2 pb-[11px]">
                             <div class="flex items-center justify-between cursor-pointer dropDownBtn"
-                                onclick="showPagesDropDown()">
-                                <p>Pages</p>
-                                <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                onclick="showPagesDropDown()" id="pagesBtn">
+                                <p class="dropDownBtn">Pages</p>
+                                <svg class="w-4 h-4 ml-2 dropDownBtn" aria-hidden="true" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M19 9l-7 7-7-7"></path>
                                 </svg>

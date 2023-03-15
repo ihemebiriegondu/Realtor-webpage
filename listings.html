@@ -27,12 +27,109 @@
                 </a>
                 <div class="lg:block hidden">
                     <ul class="flex text-sm font-semibold">
-                        <li class="px-2 mx-2 pb-[11px]"><a href="index.html" class="">Home</a></li>
-                        <li class="px-2 mx-2 pb-[11px] border-b-2 border-[#181A20]"><a href="listings.html"
-                                class="">Listing</a></li>
-                        <li class="px-2 mx-2"><a href="" class="">Property</a></li>
+                        <li class="px-2 mx-2 pb-[11px] border-b-2 border-white"><a href="/index.html" class="">Home</a>
+                        </li>
+                        <li class="px-2 mx-2 pb-[11px]">
+                            <div class="flex items-center justify-between cursor-pointer dropDownBtn"
+                                onclick="showListingDropDown2()" id="listingBtn">
+                                <p class="dropDownBtn">Listings</p>
+                                <svg class="w-4 h-4 ml-2 dropDownBtn" aria-hidden="true" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                            <div id="listingDropDown3"
+                                class="allTopNavDropDown absolute hidden z-20 text-sm text-[#181A20] py-[10px] flex flex-col font-normal bg-white top-[75px] rounded-[12px] shadow-[0px_10px_40px_rgba(24,26,32,0.05)] pt-[30px]">
+                                <a href="/listings.html"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Newyork
+                                    Listings</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Contact</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Compare</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Pricing</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Faq</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Login</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">404</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Invoice</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">UI
+                                    Elements</a>
+                            </div>
+                        </li>
+                        <li class="px-2 mx-2 pb-[11px]">
+                            <div class="flex items-center justify-between cursor-pointer dropDownBtn"
+                                onclick="showPropertyDropDown2()" id="">
+                                <p class="dropDownBtn">Property</p>
+                                <svg class="w-4 h-4 ml-2 dropDownBtn" aria-hidden="true" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                            <div id="propertyDropDown3"
+                                class="allTopNavDropDown absolute hidden z-20 text-sm text-[#181A20] py-[10px] flex flex-col font-normal bg-white top-[75px] rounded-[12px] shadow-[0px_10px_40px_rgba(24,26,32,0.05)] pt-[30px]">
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">About</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Contact</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Compare</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Pricing</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Faq</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Login</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">404</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Invoice</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">UI
+                                    Elements</a>
+                            </div>
+                        </li>
                         <li class="px-2 mx-2"><a href="" class="">Blog</a></li>
-                        <li class="px-2 mx-2"><a href="">Pages</a></li>
+                        <li class="px-2 mx-2 pb-[11px]">
+                            <div class="flex items-center justify-between cursor-pointer dropDownBtn"
+                                onclick="showPagesDropDown2()" id="pagesBtn">
+                                <p class="dropDownBtn">Pages</p>
+                                <svg class="w-4 h-4 ml-2 dropDownBtn" aria-hidden="true" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                            <div id="pagesDropDown3"
+                                class="allTopNavDropDown absolute hidden z-20 text-sm text-[#181A20] py-[10px] flex flex-col font-normal bg-white top-[75px] rounded-[12px] shadow-[0px_10px_40px_rgba(24,26,32,0.05)] pt-[30px]">
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">About</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Contact</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Compare</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Pricing</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Faq</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Login</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">404</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Invoice</a>
+                                <a href="#"
+                                    class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">UI
+                                    Elements</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="lg:flex hidden items-center">
@@ -76,9 +173,9 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="cursor-pointer navAccordions"
-                                    onclick="showListingAccordion2()">
-                                    <div class="flex items-center justify-between px-[30px] py-[20px] border-l-[2px] border-primary bg-primary/[.07]">
+                                <li class="cursor-pointer navAccordions" onclick="showListingAccordion2()">
+                                    <div
+                                        class="flex items-center justify-between px-[30px] py-[20px] border-l-[2px] border-primary bg-primary/[.07]">
                                         <p class="text-primary">Listing</p>
                                         <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" class="icon icon-chevron-right"
                                             viewBox="0 0 24 24" aria-hidden="true">
