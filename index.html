@@ -165,11 +165,6 @@
                                     <a href="/index.html"
                                         class="block px-[30px] py-[20px] border-l-[2px] border-primary bg-primary/[.07] flex items-center justify-between">
                                         <p class="text-primary">Home</p>
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" class="icon icon-chevron-right"
-                                            viewBox="0 0 24 24" aria-hidden="true">
-                                            <path
-                                                d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z" />
-                                        </svg>
                                     </a>
                                 </li>
                                 <li class="px-[30px] py-[20px] border-l-[2px] border-white cursor-pointer navAccordions"
@@ -252,11 +247,6 @@
                                 <li
                                     class="px-[30px] py-[20px] border-l-[2px] border-white flex items-center justify-between cursor-pointer">
                                     <p class="">Blog</p>
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" class="icon icon-chevron-right"
-                                        viewBox="0 0 24 24" aria-hidden="true">
-                                        <path
-                                            d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z" />
-                                    </svg>
                                 </li>
 
                                 <li class="px-[30px] py-[20px] border-l-[2px] border-white cursor-pointer navAccordions"
@@ -1579,7 +1569,7 @@
                 <!--Footer links for smaller screens-->
                 <div class="md:hidden block sm:mt-[-70px] mt-5">
                     <div class="mb-[10px]">
-                        <div class="flex items-center mb-[10px]">
+                        <div class="flex items-center mb-[10px]" onclick="showFooterAccordionHome1()">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                 class="w-5 h-5 mr-[10px] hidden">
                                 <path fill-rule="evenodd"
@@ -1594,30 +1584,58 @@
                             </svg>
                             <p class="text-[15px] font-semibold">Popular Search</p>
                         </div>
-                        <ul class="text-sm text-[#BEBDBD] ml-[30px]">
+                        <ul class="text-sm text-[#BEBDBD] ml-[30px] hidden" id="searchAccordion">
                             <li class="mb-[20px]"><a href="">Apartment for Rent</a></li>
                             <li class="mb-[20px]"><a href="">Apartment Low to hide</a></li>
                             <li class="mb-[20px]"><a href="">Offices for Buy</a></li>
                             <li class="mb-[20px]"><a href="">Offices for Rent</a></li>
                         </ul>
                     </div>
-                    <div class="flex items-center mb-[10px]">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="w-5 h-5 mr-[10px]">
-                            <path fill-rule="evenodd"
-                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-[15px] font-semibold">Quick Links</p>
+                    <div class="mb-[10px]">
+                        <div class="flex items-center mb-[10px]" onclick="showFooterAccordionHome2()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 mr-[10px] hidden">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 mr-[10px]">
+                                <path fill-rule="evenodd"
+                                    d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p class="text-[15px] font-semibold">Quick Links</p>
+                        </div>
+                        <ul class="text-sm text-[#BEBDBD] ml-[30px] hidden" id="QuickLinksAccordion">
+                            <li class="mb-[20px]"><a href="">Apartment for Rent</a></li>
+                            <li class="mb-[20px]"><a href="">Apartment Low to hide</a></li>
+                            <li class="mb-[20px]"><a href="">Offices for Buy</a></li>
+                            <li class="mb-[20px]"><a href="">Offices for Rent</a></li>
+                        </ul>
                     </div>
-                    <div class="flex items-center mb-[10px]">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="w-5 h-5 mr-[10px]">
-                            <path fill-rule="evenodd"
-                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <p class="text-[15px] font-semibold">Discover</p>
+                    <div class="mb-[10px]">
+                        <div class="flex items-center mb-[10px]" onclick="showFooterAccordionHome3()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 mr-[10px] hidden">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 mr-[10px]">
+                                <path fill-rule="evenodd"
+                                    d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <p class="text-[15px] font-semibold">Discover</p>
+                        </div>
+                        <ul class="text-sm text-[#BEBDBD] ml-[30px] hidden" id="DiscoverAccordion">
+                            <li class="mb-[20px]"><a href="">Apartment for Rent</a></li>
+                            <li class="mb-[20px]"><a href="">Apartment Low to hide</a></li>
+                            <li class="mb-[20px]"><a href="">Offices for Buy</a></li>
+                            <li class="mb-[20px]"><a href="">Offices for Rent</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
