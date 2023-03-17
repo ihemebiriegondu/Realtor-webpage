@@ -38,6 +38,9 @@
   background-color: #EB6753 !important;
 }
 
+input[type='range'] {
+  height: 2px;
+}
 
 
 
@@ -59,7 +62,7 @@
     width: 30px;
     height: 30px;
   }
-  
+
   .swiper3 .swiper-pagination-bullet-active {
     width: 30px !important;
     height: 30px !important;

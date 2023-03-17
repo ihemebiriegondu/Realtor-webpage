@@ -884,6 +884,10 @@ video {
   margin-top: 40px;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -1060,6 +1064,10 @@ video {
 
 .w-px {
   width: 1px;
+}
+
+.w-0 {
+  width: 0px;
 }
 
 .max-w-0 {
@@ -1802,9 +1810,17 @@ video {
   font-size: 36px;
 }
 
+.text-medium {
+  font-size: 15px;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-small {
+  font-size: 13px;
 }
 
 .text-xl {
@@ -1815,14 +1831,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-medium {
-  font-size: 15px;
-}
-
-.text-small {
-  font-size: 13px;
 }
 
 .font-medium {
@@ -2333,17 +2341,13 @@ video {
     text-align: left;
   }
 
-  .sm\:text-\[15px\] {
+  .sm\:text-medium {
     font-size: 15px;
   }
 
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:text-medium {
-    font-size: 15px;
   }
 }
 
@@ -2623,10 +2627,6 @@ video {
     line-height: 2.25rem;
   }
 
-  .md\:text-\[13px\] {
-    font-size: 13px;
-  }
-
   .md\:text-\[22px\] {
     font-size: 22px;
   }
@@ -2887,10 +2887,6 @@ video {
 
   .lg\:text-start {
     text-align: start;
-  }
-
-  .lg\:text-\[15px\] {
-    font-size: 15px;
   }
 
   .lg\:text-\[40px\] {

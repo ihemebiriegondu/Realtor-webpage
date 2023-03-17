@@ -383,19 +383,29 @@
                         </div>
                     </div>
                     <p class="text-[15px] font-semibold mb-5">Price Range</p>
-                    <div class="mb-[15px]">
-                        <input type="range" min="300" max="100000" name="price-range" id="" class="w-full h-[3px] rounded-[30px] appearance-none cursor-pointer dark:bg-[#181A20]
-                                [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-[29px] 
-                                [&::-webkit-slider-thumb]:w-[29px] [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[url('/public/images/bg.png')]
-                                ">
+
+                    <div class="w-full mb-4 slider relative" id="sliderComp2">
+                        <range-selector class="w-full flex static" id="rangeSelector2" min-label="Minimum"
+                            max-label="Maximum" min-range="1000" max-range="100000" inputs-for-labels hide-legend
+                            hide-label event-name-to-emit-on-change="my-custom-range-changed-event2"
+                            slider-color="#181A20" slider-height="2px" circle-color="white"
+                            circle-border="2px solid #181A20" circle-size="20px" common-size="2px"
+                            circle-focus-border-color="#181A20" />
                     </div>
                     <div class="flex items-center justify-between w-full mb-[30px]">
-                        <input type="number" placeholder="$ min."
-                            class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
+                        <div class="border border-[#DDDDDD] rounded-[8px] p-[12px] text-sm w-full flex">
+                            <span class="mr-3 block">$</span>
+                            <input type="number" placeholder="min." id="minRangeValue2"
+                                class="bg-transparent outline-none text-sm w-full">
+                        </div>
                         <p class="text-[#181A20] text-3xl mx-px">-</p>
-                        <input type="number" placeholder="$ max."
-                            class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
+                        <div class="border border-[#DDDDDD] rounded-[8px] p-[12px] text-sm w-full flex">
+                            <span class="mr-3 block">$</span>
+                            <input type="number" placeholder="max." id="maxRangeValue2"
+                                class="bg-transparent outline-none text-sm w-full">
+                        </div>
                     </div>
+
                     <p class="text-[15px] font-semibold mb-5">Bedrooms</p>
                     <div class="overflow-hidden flex items-center mb-[30px] w-full">
                         <p
@@ -559,19 +569,28 @@
                             </div>
                         </div>
                         <p class="text-[15px] font-semibold mb-5">Price Range</p>
-                        <div class="mb-[15px]">
-                            <input type="range" min="300" max="100000" name="price-range" id="" class="w-full h-[3px] rounded-[30px] appearance-none cursor-pointer dark:bg-[#181A20]
-                                [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-[29px] 
-                                [&::-webkit-slider-thumb]:w-[29px] [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[url('/public/images/bg.png')]
-                                ">
+                        <div class="w-full mb-4 slider relative" id="sliderComp">
+                            <range-selector class="w-full flex static" id="rangeSelector1" min-label="Minimum"
+                                max-label="Maximum" min-range="1000" max-range="100000" inputs-for-labels hide-legend
+                                hide-label event-name-to-emit-on-change="my-custom-range-changed-event"
+                                slider-color="#181A20" slider-height="2px" circle-color="white"
+                                circle-border="2px solid #181A20" circle-size="20px" common-size="2px"
+                                circle-focus-border-color="#181A20" />
                         </div>
                         <div class="flex items-center justify-between w-full mb-[30px]">
-                            <input type="number" placeholder="$ min."
-                                class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
+                            <div class="border border-[#DDDDDD] rounded-[8px] p-[12px] text-sm w-full flex">
+                                <span class="mr-3 block">$</span>
+                                <input type="number" placeholder="min." id="minRangeValue"
+                                    class="bg-transparent outline-none text-sm w-full">
+                            </div>
                             <p class="text-[#181A20] text-3xl mx-px">-</p>
-                            <input type="number" placeholder="$ max."
-                                class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
+                            <div class="border border-[#DDDDDD] rounded-[8px] p-[12px] text-sm w-full flex">
+                                <span class="mr-3 block">$</span>
+                                <input type="number" placeholder="max." id="maxRangeValue"
+                                    class="bg-transparent outline-none text-sm w-full">
+                            </div>
                         </div>
+
                         <p class="text-[15px] font-semibold mb-5">Bedrooms</p>
                         <div class="overflow-hidden flex items-center mb-[30px] w-full">
                             <p
@@ -1623,6 +1642,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/maxshuty/accessible-web-components@latest/dist/simpleRange.min.js"></script>
+    <script src="./public/js/slider.js"></script>
     <script src="/public/js/swiper.js"></script>
     <script src="/public/js/offcanvas.js"></script>
     <script src="./public/js/dropDowns.js"></script>
