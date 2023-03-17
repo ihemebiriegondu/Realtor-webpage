@@ -17,7 +17,7 @@ window.onclick = (e) => {
 }
 
 
-const addHidden = (elem) => {
+const addHiddenTopNav = (elem) => {
     let parent = elem.parentElement
     let grandparent = parent.parentElement
     let parentSiblings = Array.from(grandparent.children);
@@ -35,24 +35,25 @@ const addHidden = (elem) => {
     }
 
 }
+
 const showListingDropDown = () => {
     const listingDropDown1 = document.getElementById('listingDropDown1')
 
-    addHidden(listingDropDown1)
+    addHiddenTopNav(listingDropDown1)
     listingDropDown1.classList.toggle('hidden')
 }
 
 const showPagesDropDown = () => {
     const pagesDropDown1 = document.getElementById('pagesDropDown1')
 
-    addHidden(pagesDropDown1)
+    addHiddenTopNav(pagesDropDown1)
     pagesDropDown1.classList.toggle('hidden')
 }
 
 const showPropertyDropDown = () => {
     const propertyDropDown1 = document.getElementById('propertyDropDown1')
 
-    addHidden(propertyDropDown1)
+    addHiddenTopNav(propertyDropDown1)
     propertyDropDown1.classList.toggle('hidden')
 }
 
@@ -61,68 +62,110 @@ const showPropertyDropDown = () => {
 const showListingDropDown2 = () => {
     const listingDropDown3 = document.getElementById('listingDropDown3')
 
-    addHidden(listingDropDown3);
+    addHiddenTopNav(listingDropDown3);
     listingDropDown3.classList.toggle('hidden')
 }
 
 const showPagesDropDown2 = () => {
     const pagesDropDown3 = document.getElementById('pagesDropDown3')
 
-    addHidden(pagesDropDown3);
+    addHiddenTopNav(pagesDropDown3);
     pagesDropDown3.classList.toggle('hidden')
 }
 
 const showPropertyDropDown2 = () => {
     const propertyDropDown3 = document.getElementById('propertyDropDown3')
 
-    addHidden(propertyDropDown3);
+    addHiddenTopNav(propertyDropDown3);
     propertyDropDown3.classList.toggle('hidden')
 }
 
 
 //dropdown for the smaller screens
 
+const addHiddenSideNav = (elem) => {
+    let parent = elem.parentElement
+    let grandparent = parent.parentElement
+    let parentSiblings = Array.from(grandparent.children);
+
+    for (let i = 0; i < parentSiblings.length; i++) {
+
+        let nextSiblings = parentSiblings[i].children[1]
+        let nextSiblingsIcon = parentSiblings[i].children[0].children[1]
+        console.log(nextSiblingsIcon)
+
+        if (nextSiblings != undefined && nextSiblings != elem) {
+            if (nextSiblings.classList.contains('max-h-96')) {
+                nextSiblings.classList.remove('max-h-96')
+            } 
+        }
+
+        if (nextSiblingsIcon != undefined && nextSiblings != elem) {
+            if (nextSiblingsIcon.classList.contains('rotate-90')){
+                nextSiblingsIcon.classList.remove('rotate-90')
+            }
+        }
+    }
+}
+
 const showListingAccordion = () => {
     const listingDropDown2 = document.getElementById("listingDropDown2");
+    const ListingAccordionIcon1 = document.getElementById('ListingAccordionIcon1');
 
-    addHidden(listingDropDown2)
-    listingDropDown2.classList.toggle('hidden')
+    addHiddenSideNav(listingDropDown2)
+    listingDropDown2.classList.toggle('max-h-96')
+    ListingAccordionIcon1.classList.toggle('rotate-90')
 }
 
 const showPagesAccordion = () => {
     const pagesDropDown2 = document.getElementById("pagesDropDown2");
+    const pagesAccordionIcon1 = document.getElementById('pagesAccordionIcon1');
 
-    addHidden(pagesDropDown2)
-    pagesDropDown2.classList.toggle('hidden')
+    addHiddenSideNav(pagesDropDown2)
+    pagesDropDown2.classList.toggle('max-h-96')
+    pagesAccordionIcon1.classList.toggle('rotate-90')
 }
 
 const showPropertyAccordion = () => {
     const propertyDropDown2 = document.getElementById("propertyDropDown2");
+    const PropertyAccordionIcon1 = document.getElementById('PropertyAccordionIcon1');
 
-    addHidden(propertyDropDown2)
-    propertyDropDown2.classList.toggle('hidden')
+    addHiddenSideNav(propertyDropDown2)
+    propertyDropDown2.classList.toggle('max-h-96')
+    PropertyAccordionIcon1.classList.toggle('rotate-90')
 }
+
+
 
 const showListingAccordion2 = () => {
     const listingDropDown4 = document.getElementById("listingDropDown4");
+    const ListingAccordionIcon2 = document.getElementById('ListingAccordionIcon2');
 
-    addHidden(listingDropDown4)
-    listingDropDown4.classList.toggle('hidden')
+    addHiddenSideNav(listingDropDown4)
+    listingDropDown4.classList.toggle('max-h-96')
+    ListingAccordionIcon2.classList.toggle('rotate-90')
 }
 
 const showPagesAccordion2 = () => {
     const pagesDropDown4 = document.getElementById("pagesDropDown4");
+    const pagesAccordionIcon2 = document.getElementById('pagesAccordionIcon2');
 
-    addHidden(pagesDropDown4)
-    pagesDropDown4.classList.toggle('hidden')
+    addHiddenSideNav(pagesDropDown4)
+    pagesDropDown4.classList.toggle('max-h-96')
+    pagesAccordionIcon2.classList.toggle('rotate-90')
 }
 
 const showPropertyAccordion2 = () => {
     const propertyDropDown4 = document.getElementById("propertyDropDown4");
+    const PropertyAccordionIcon2 = document.getElementById('PropertyAccordionIcon2');
 
-    addHidden(propertyDropDown4)
-    propertyDropDown4.classList.toggle('hidden')
+    addHiddenSideNav(propertyDropDown4)
+    propertyDropDown4.classList.toggle('max-h-96')
+    PropertyAccordionIcon2.classList.toggle('rotate-90')
 }
+
+
+
 
 //smaller screens footer
 const showFooterAccordionHome1 = () => {

@@ -149,9 +149,9 @@
             </nav>
 
             <!--Offcanvas for smaller screen sizes-->
-            <div class="absolute top-0 bottom-0 left-0 right-0 w-full z-50 bg-black/[.5] lg:invisible invisible transition-all duration-300 ease-in-out"
+            <div class="fixed top-0 bottom-0 left-0 right-0 w-full z-50 bg-black/[.5] lg:invisible invisible transition-all duration-300 ease-in-out"
                 id="menuOffcanvas2">
-                <nav class="flex justify-between flex-col divide-y h-screen overflow-y-scroll absolute top-0 bottom-0 right-0 transition-all duration-300 ease-in-out bg-white shadow-[0px_10px_40px_rgba(24,26,32,0.05)] md:w-1/2 sm:w-3/4 w-full w-0"
+                <nav class="flex justify-between flex-col divide-y h-screen overflow-y-scroll absolute top-0 bottom-0 right-0 transition-all transition-width duration-300 ease-in-out bg-white shadow-[0px_10px_40px_rgba(24,26,32,0.05)] md:w-1/2 sm:w-3/4 w-full w-0 scale-x-0"
                     id="menu2">
                     <div class="flex flex-col divide-y divide-[#DDDDDD] pb-[240px]">
                         <div class="flex items-center justify-between py-[25px] px-[30px]">
@@ -172,77 +172,71 @@
                                     <div
                                         class="flex items-center justify-between px-[30px] py-[20px] border-l-[2px] border-primary bg-primary/[.07]">
                                         <p class="text-primary">Listing</p>
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" class="icon icon-chevron-right"
-                                            viewBox="0 0 24 24" aria-hidden="true">
+                                        <svg class="w-4 h-4 ml-2 icon icon-chevron-right origin-center transition-all duration-300 ease-in-out"
+                                            id="ListingAccordionIcon2" viewBox="0 0 24 24" viewBox="0 0 24 24"
+                                            aria-hidden="true">
                                             <path
                                                 d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z" />
                                         </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
-                                            stroke-width="1.5" stroke="currentColor"
-                                            class="w-4 h-4 ml-2 font-bold hidden">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                        </svg>
                                     </div>
                                     <div id="listingDropDown4"
-                                        class="allSideNavDropDown px-[30px] transition-all duration-300 ease-in-out hidden text-sm text-[#181A20] py-[10px] flex flex-col font-normal mt-4">
-                                        <a href="/listings.html"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Newyork
-                                            Listings</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Contact</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Compare</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Pricing</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Faq</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Login</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">404</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Invoice</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">UI
-                                            Elements</a>
+                                        class="allSideNavDropDown transition-all transition-[max-height] overflow-hidden duration-300 ease-in-out text-sm text-[#181A20] font-normal max-h-0">
+                                        <div class="py-[10px] mt-4 flex flex-col">
+                                            <a href="/listings.html"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Newyork
+                                                Listings</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Contact</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Compare</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Pricing</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Faq</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Login</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">404</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Invoice</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">UI
+                                                Elements</a>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="px-[30px] py-[20px] border-l-[2px] border-white cursor-pointer navAccordions"
                                     onclick="showPropertyAccordion2()">
                                     <div class="flex items-center justify-between">
                                         <p class="">Property</p>
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" class="icon icon-chevron-right"
-                                            viewBox="0 0 24 24" aria-hidden="true">
+                                        <svg class="w-4 h-4 ml-2 icon icon-chevron-right origin-center transition-all duration-300 ease-in-out"
+                                            id="PropertyAccordionIcon1" viewBox="0 0 24 24" viewBox="0 0 24 24"
+                                            aria-hidden="true">
                                             <path
                                                 d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z" />
                                         </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
-                                            stroke-width="1.5" stroke="currentColor"
-                                            class="w-4 h-4 ml-2 font-bold hidden">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                        </svg>
                                     </div>
                                     <div id="propertyDropDown4"
-                                        class="allSideNavDropDown transition-all duration-300 ease-in-out hidden text-sm text-[#181A20] py-[10px] flex flex-col font-normal mt-4">
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Contact</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Compare</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Pricing</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Faq</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Login</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">404</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Invoice</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">UI
-                                            Elements</a>
+                                        class="allSideNavDropDown transition-all transition-[max-height] overflow-hidden duration-300 ease-in-out text-sm text-[#181A20] font-normal max-h-0">
+                                        <div class="py-[10px] mt-4 flex flex-col">
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Contact</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Compare</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Pricing</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Faq</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Login</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">404</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Invoice</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">UI
+                                                Elements</a>
+                                        </div>
                                     </div>
                                 </li>
                                 <li
@@ -254,39 +248,34 @@
                                     onclick="showPagesAccordion2()">
                                     <div class="flex items-center justify-between">
                                         <p class="">Pages</p>
-                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" class="icon icon-chevron-right"
+                                        <svg class="w-4 h-4 ml-2 icon icon-chevron-right origin-center transition-all duration-300 ease-in-out"
+                                            id="pagesAccordionIcon1" viewBox="0 0 24 24" class="icon icon-chevron-right"
                                             viewBox="0 0 24 24" aria-hidden="true">
                                             <path
                                                 d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z" />
                                         </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
-                                            stroke-width="1.5" stroke="currentColor"
-                                            class="w-4 h-4 ml-2 font-bold hidden">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                        </svg>
                                     </div>
                                     <div id="pagesDropDown4"
-                                        class="allSideNavDropDown transition-all duration-300 ease-in-out hidden text-sm text-[#181A20] py-[10px] flex flex-col font-normal mt-4">
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">About</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Contact</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Compare</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Pricing</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Faq</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Login</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">404</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Invoice</a>
-                                        <a href="#"
-                                            class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">UI
-                                            Elements</a>
+                                        class="allSideNavDropDown transition-all transition-[max-height] overflow-hidden duration-300 ease-in-out text-sm text-[#181A20] font-normal max-h-0">
+                                        <div class="py-[10px] mt-4 flex flex-col">
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Contact</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Compare</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Pricing</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Faq</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Login</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">404</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">Invoice</a>
+                                            <a href="#"
+                                                class="py-[10px] py-[10px] pl-[30px] pr-[150px] hover:bg-primary/[.07] transition duration-300 ease-in-out">UI
+                                                Elements</a>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -314,17 +303,184 @@
             </div>
     </header>
     <main class="bg-[#E2E2E2] md:pt-[60px] sm:pt-[40px] pt-[20px] text-[#181A20]">
-        <!--Filter offcanvas for smaller screens-->
 
-        
+        <!--Filter offcanvas for smaller screens-->
+        <div class="fixed top-0 bottom-0 left-0 right-0 w-full z-50 bg-black/[.5] lg:invisible invisible transition-all duration-300 ease-in-out"
+            id="filterOffcanvas">
+            <div class="bg-white rounded-3xl shadow-[0px_1px_4px_rgba(24,26,32,0.07)] lg:hidden h-screen 
+                overflow-y-scroll absolute top-0 bottom-0 right-0 transition-all transition-width duration-300 ease-in-out bg-white 
+                sm:w-1/2 xs:w-3/4 w-full w-0 scale-x-0" id="filterOffCan">
+
+                <div class="py-8 px-5">
+                    <div class="flex items-center justify-between mb-5">
+                        <p class="text-[15px] font-semibold">34,596 results</p>
+                        <button onclick="hideFilterOffcanvas()" class="py-2 px-5 bg-primary text-white rounded-xl text-[13px]">Done</button>
+                    </div>
+                    <div class="border border-[#DDDDDD] rounded-[8px] flex items-center p-[15px] mb-[30px]">
+                        <img src="/public/images/search (1) 1 (1).png" alt="" class="mr-[10px]">
+                        <input type="text" placeholder="What are you looking for?"
+                            class="grow bg-transparent border-none outline-none text-sm">
+                    </div>
+                    <p class="text-[15px] font-semibold mb-5">Listing Status</p>
+                    <div class="mb-[30px]">
+                        <div class="flex items-center mb-2">
+                            <input type="radio" name="sell" id="buy" class="mr-[10px] accent-black outline-none">
+                            <label class="text-sm" for="buy">Buy</label>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <input type="radio" name="sell" id="rent" class="mr-[10px] accent-black outline-none">
+                            <label class="text-sm" for="rent">Rent</label>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <input type="radio" name="sell" id="sold" class="mr-[10px] accent-black outline-none">
+                            <label class="text-sm" for="sold">Sold</label>
+                        </div>
+                    </div>
+                    <p class="text-[15px] font-semibold mb-5">Property Type</p>
+                    <div class="mb-[30px]">
+                        <div class="flex items-center mb-2">
+                            <input type="checkbox" name="type" id="house" class="mr-[10px] accent-black outline-none">
+                            <label class="text-sm" for="house">Houses</label>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <input type="checkbox" name="type" id="apartment"
+                                class="mr-[10px] accent-black outline-none">
+                            <label class="text-sm" for="apartment">Apartments</label>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <input type="checkbox" name="type" id="office" class="mr-[10px] accent-black outline-none">
+                            <label class="text-sm" for="office">Office</label>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <input type="checkbox" name="type" id="villa" class="mr-[10px] accent-black outline-none">
+                            <label class="text-sm" for="villa">Villa</label>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <input type="checkbox" name="type" id="townhome"
+                                class="mr-[10px] accent-black outline-none">
+                            <label class="text-sm" for="townhome">Townhome</label>
+                        </div>
+                    </div>
+                    <p class="text-[15px] font-semibold mb-5">Price Range</p>
+                    <div class="mb-[15px]">
+                        <input type="range" min="300" max="100000" name="price-range" id="" class="w-full h-[3px] rounded-[30px] appearance-none cursor-pointer dark:bg-[#181A20]
+                                [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-[29px] 
+                                [&::-webkit-slider-thumb]:w-[29px] [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[url('/public/images/bg.png')]
+                                ">
+                    </div>
+                    <div class="flex items-center justify-between w-full mb-[30px]">
+                        <input type="number" placeholder="$ min."
+                            class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
+                        <p class="text-[#181A20] text-3xl mx-px">-</p>
+                        <input type="number" placeholder="$ max."
+                            class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
+                    </div>
+                    <p class="text-[15px] font-semibold mb-5">Bedrooms</p>
+                    <div class="overflow-hidden flex items-center mb-[30px] w-full">
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-[#181A20] py-[12px] flex items-center justify-center px-auto rounded-tl-[12px] rounded-bl-[12px]">
+                            Any</p>
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
+                            1+</p>
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
+                            2+</p>
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
+                            3+</p>
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
+                            4+</p>
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] rounded-tr-[12px] rounded-br-[12px] py-[12px] flex items-center justify-center px-auto">
+                            5+</p>
+                    </div>
+                    <p class="text-[15px] font-semibold mb-5">Bathrooms</p>
+                    <div class="overflow-hidden flex items-center mb-[30px] w-full">
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-[#181A20] py-[12px] flex items-center justify-center px-auto rounded-tl-[12px] rounded-bl-[12px]">
+                            Any</p>
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
+                            1+</p>
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
+                            2+</p>
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
+                            3+</p>
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] py-[12px] flex items-center justify-center px-auto">
+                            4+</p>
+                        <p
+                            class="grow text-[13px] text-[#181A20] border-2 border-l-0 border-[#DDDDDD] rounded-tr-[12px] rounded-br-[12px] py-[12px] flex items-center justify-center px-auto">
+                            5+</p>
+                    </div>
+                    <p class="text-[15px] font-semibold mb-5">Location</p>
+                    <div class="mb-[30px]">
+                        <button
+                            class="inline-flex items-center justify-between bg-transparent border border-[#DDDDDD] rounded-[8px] block w-full py-[12px] px-[15px] text-[#717171] outline-none">
+                            All Cities
+                            <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="text-[15px] font-semibold mb-5">Square Feet</p>
+                    <div class="flex items-center justify-between w-full mb-[30px]">
+                        <input type="number" placeholder="Min."
+                            class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
+                        <p class="text-[#181A20] text-3xl mx-px">-</p>
+                        <input type="number" placeholder="Max."
+                            class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
+                    </div>
+                    <p class="text-[15px] font-semibold mb-5">Year Built</p>
+                    <div class="flex items-center justify-between w-full mb-[30px]">
+                        <input type="text" placeholder="2019"
+                            class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
+                        <p class="text-[#181A20] text-3xl mx-px">-</p>
+                        <input type="text" placeholder="2022"
+                            class="border border-[#DDDDDD] rounded-[8px] p-[12px] bg-transparent outline-none text-sm w-full">
+                    </div>
+                    <div class="flex items-center justify-start mb-[30px]">
+                        <div class="bg-[#F7F7F7] rounded-full py-[13px] px-[12px] mr-[10px] cursor-pointer">
+                            <img src="/public/images/settings 1.png" alt="" class="w-4 h-4">
+                        </div>
+                        <p class="md:mr-5 text-sm font-semibold">Other Features</p>
+                    </div>
+                    <button
+                        class="bg-primary py-[19px] px-[18px] rounded-[12px] flex items-center justify-center w-full mb-[20px]">
+                        <img src="/public/images/search (1) 1.png" alt="">
+                        <p class="text-white text-sm font-semibold ml-[10px]">Search</p>
+                    </button>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="/public/images/turn-back 1.png" alt="" class="mr-[10px]">
+                            <p class="text-sm underline">Reset all filters</p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="/public/images/favourite 1.png" alt="" class="mr-[10px]">
+                            <p class="text-sm underline">Save Search</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="xl:w-10/12 lg:w-11/12 sm:w-10/12 w-11/12 mx-auto overflow-hidden md:pb-[200px] pb-[100px]">
             <div class="md:mb-[60px] sm:mb-[40px] mb-[20px] flex justify-between items-center">
-                <div>
-                    <h3 class="md:text-[30px] text-[20px] font-semibold">New York Homes for Sale</h3>
+                <div class="mr-4">
+                    <h3 class="md:text-3xl text-xl font-semibold">New York Homes for Sale</h3>
                     <p class="text-sm">Home / For Rent</p>
                 </div>
-                <button class="lg:hidden flex items-center bg-white py-2 px-2 rounded-full">
-                    <img src="/public/images/settings 1.png" alt="" class="w-2 h-2 mr-[10px] cursor-pointer">
+                <button class="lg:hidden flex items-center bg-white xs:py-3 py-2 xs:px-5 px-3 rounded-full"
+                    onclick="showFilterOffcanvas()">
+                    <img src="/public/images/settings 1.png" alt=""
+                        class="xs:w-3.5 w-3 xs:h-3.5 h-3 xs:mr-2.5 mr-2 cursor-pointer">
                     <p class="text-sm">Filter</p>
                 </button>
             </div>
@@ -490,7 +646,7 @@
                     <article class="col-span-2 swiper6 overflow-hidden pb-[200px]">
                         <div class="text-sm flex justify-between items-center mb-[30px]">
                             <p>Showing 1–10 of 13 results</p>
-                            <div class="flex">
+                            <div class="flex sm:ml-0 ml-4">
                                 <p class="mr-[15px]">Sort by
                                     <select name="" id=""
                                         class="bg-transparent border-none outline-none font-medium cursor-pointer">

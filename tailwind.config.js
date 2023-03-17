@@ -13,6 +13,9 @@ module.exports = {
       screens: {
         'xs': '425px'
       },
+      transitionProperty: {
+        multiple: "width , height , backgroundColor , border-radius"
+      },
     },
   },
   plugins: [],
