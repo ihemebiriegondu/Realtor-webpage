@@ -150,7 +150,7 @@
             <!--Offcanvas for smaller screen sizes-->
             <div class="fixed top-0 bottom-0 left-0 right-0 w-full z-50 bg-black/[.5] lg:invisible invisible transition-all duration-300 ease-in-out"
                 id="menuOffcanvas">
-                <nav class="flex justify-between flex-col divide-y h-screen overflow-y-scroll transition-all transition-width duration-300 ease-in-out bg-white shadow-[0px_10px_40px_rgba(24,26,32,0.05)] md:w-1/2 sm:w-3/4 w-full w-0 scale-x-0 absolute top-0 bottom-0 right-0"
+                <nav class="flex justify-between flex-col divide-y h-screen overflow-y-scroll transition-all transition-width duration-500 ease-in-out bg-white shadow-[0px_10px_40px_rgba(24,26,32,0.05)] max-w-0 absolute top-0 bottom-0 right-0"
                     id="menu">
                     <div class="flex flex-col divide-y divide-[#DDDDDD] pb-[240px]">
                         <div class="flex items-center justify-between py-[25px] px-[30px]">
@@ -1501,7 +1501,7 @@
             <hr class="bg-white/[.1] border-white/[.1] h-px mb-[60px] md-block hidden">
             <div class="flex sm:flex-row flex-col justify-between mb-[60px]">
                 <!--Footer links for large screens-->
-                <div class="md:grid hidden grid-cols-3 gap-x-[20px] grow">
+                <div class="md:grid hidden lg:grid-cols-3 grid-cols-2 gap-x-[20px] grow">
                     <div>
                         <p class="text-[15px] mb-5">Popular Search</p>
                         <div class="text-sm text-[#BEBDBD]">
@@ -1523,7 +1523,7 @@
                             <p class="mb-4">FAQs</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="lg:mt-0 -mt-20">
                         <p class="text-[15px] mb-5">Discover</p>
                         <div class="text-sm text-[#BEBDBD]">
                             <p class="mb-4">Miami</p>
@@ -1554,25 +1554,20 @@
                         </button>
                     </form>
                 </div>
+
                 <!--Footer links for smaller screens-->
                 <div class="md:hidden block sm:mt-[-70px] mt-5">
                     <div class="mb-[10px]">
                         <div class="flex items-center mb-[10px]" onclick="showFooterAccordionHome1()">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 mr-[10px] hidden">
+                                class="w-5 h-5 mr-[10px] origin-center rotate-180 transition-all duration-300 ease-in-out" id="searchAccordionIcon">
                                 <path fill-rule="evenodd"
                                     d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 mr-[10px]">
-                                <path fill-rule="evenodd"
-                                    d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
-                                    clip-rule="evenodd" />
-                            </svg>
                             <p class="text-[15px] font-semibold">Popular Search</p>
                         </div>
-                        <ul class="text-sm text-[#BEBDBD] ml-[30px] hidden" id="searchAccordion">
+                        <ul class="text-sm text-[#BEBDBD] ml-[30px] transition-[max-height] transition-all duration-300 ease-in-out overflow-hidden max-h-0 max-h-96" id="searchAccordion">
                             <li class="mb-[20px]"><a href="">Apartment for Rent</a></li>
                             <li class="mb-[20px]"><a href="">Apartment Low to hide</a></li>
                             <li class="mb-[20px]"><a href="">Offices for Buy</a></li>
@@ -1582,47 +1577,38 @@
                     <div class="mb-[10px]">
                         <div class="flex items-center mb-[10px]" onclick="showFooterAccordionHome2()">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 mr-[10px] hidden">
+                                class="w-5 h-5 mr-[10px] origin-center transition-all duration-300 ease-in-out" id="QuickLinkAccordionIcon">
                                 <path fill-rule="evenodd"
                                     d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 mr-[10px]">
-                                <path fill-rule="evenodd"
-                                    d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
-                                    clip-rule="evenodd" />
-                            </svg>
                             <p class="text-[15px] font-semibold">Quick Links</p>
                         </div>
-                        <ul class="text-sm text-[#BEBDBD] ml-[30px] hidden" id="QuickLinksAccordion">
-                            <li class="mb-[20px]"><a href="">Apartment for Rent</a></li>
-                            <li class="mb-[20px]"><a href="">Apartment Low to hide</a></li>
-                            <li class="mb-[20px]"><a href="">Offices for Buy</a></li>
-                            <li class="mb-[20px]"><a href="">Offices for Rent</a></li>
+                        <ul class="text-sm text-[#BEBDBD] ml-[30px] transition-[max-height] transition-all duration-300 ease-in-out overflow-hidden max-h-0" id="QuickLinksAccordion">
+                            <li class="mb-5"><a href="#">Terms of Use</a></li>
+                            <li class="mb-5"><a href="#">Privacy Policy</a></li>
+                            <li class="mb-5"><a href="#">Pricing Plans</a></li>
+                            <li class="mb-5"><a href="#">Our Services</a></li>
+                            <li class="mb-5"><a href="#">Contact Support</a></li>
+                            <li class="mb-5"><a href="#">Careers</a></li>
+                            <li class="mb-5"><a href="#">FAQs</a></li>
                         </ul>
                     </div>
                     <div class="mb-[10px]">
                         <div class="flex items-center mb-[10px]" onclick="showFooterAccordionHome3()">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 mr-[10px] hidden">
+                                class="w-5 h-5 mr-[10px] origin-center transition-all duration-300 ease-in-out" id="DiscoverAccordionIcon">
                                 <path fill-rule="evenodd"
                                     d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 mr-[10px]">
-                                <path fill-rule="evenodd"
-                                    d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
-                                    clip-rule="evenodd" />
-                            </svg>
                             <p class="text-[15px] font-semibold">Discover</p>
                         </div>
-                        <ul class="text-sm text-[#BEBDBD] ml-[30px] hidden" id="DiscoverAccordion">
-                            <li class="mb-[20px]"><a href="">Apartment for Rent</a></li>
-                            <li class="mb-[20px]"><a href="">Apartment Low to hide</a></li>
-                            <li class="mb-[20px]"><a href="">Offices for Buy</a></li>
-                            <li class="mb-[20px]"><a href="">Offices for Rent</a></li>
+                        <ul class="text-sm text-[#BEBDBD] ml-[30px] transition-[max-height] transition-all duration-300 ease-in-out overflow-hidden max-h-0" id="DiscoverAccordion">
+                            <li class="mb-5"><a href="#">Miami</a></li>
+                            <li class="mb-5"><a href="#">Los Angeles</a></li>
+                            <li class="mb-5"><a href="#">Chicago</a></li>
+                            <li class="mb-5"><a href="#">New York</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1639,7 +1625,7 @@
                 </div>
             </div>
         </div>
-        <img src="/public/images/700 1.png" alt="" class="absolute bottom-0 left-[-40px]">
+        <img src="/public/images/700 1.png" alt="" class="absolute bottom-0 left-[-40px] md:block hidden">
     </footer>
 
 

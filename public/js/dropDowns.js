@@ -92,16 +92,16 @@ const addHiddenSideNav = (elem) => {
 
         let nextSiblings = parentSiblings[i].children[1]
         let nextSiblingsIcon = parentSiblings[i].children[0].children[1]
-        console.log(nextSiblingsIcon)
+        //console.log(nextSiblingsIcon)
 
         if (nextSiblings != undefined && nextSiblings != elem) {
             if (nextSiblings.classList.contains('max-h-96')) {
                 nextSiblings.classList.remove('max-h-96')
-            } 
+            }
         }
 
         if (nextSiblingsIcon != undefined && nextSiblings != elem) {
-            if (nextSiblingsIcon.classList.contains('rotate-90')){
+            if (nextSiblingsIcon.classList.contains('rotate-90')) {
                 nextSiblingsIcon.classList.remove('rotate-90')
             }
         }
@@ -168,23 +168,82 @@ const showPropertyAccordion2 = () => {
 
 
 //smaller screens footer
+
+const addHiddenFooterNav = (elem) => {
+    let parent = elem.parentElement
+    let grandparent = parent.parentElement
+    let parentSiblings = Array.from(grandparent.children);
+
+    for (let i = 0; i < parentSiblings.length; i++) {
+
+        let nextSiblings = parentSiblings[i].children[1]
+        let nextSiblingsIcon = parentSiblings[i].children[0].children[0]
+
+        if (nextSiblings != undefined && nextSiblings != elem) {
+            if (nextSiblings.classList.contains('max-h-96')) {
+                nextSiblings.classList.remove('max-h-96')
+            }
+        }
+
+        if (nextSiblingsIcon != undefined && nextSiblings != elem) {
+            if (nextSiblingsIcon.classList.contains('rotate-180')) {
+                nextSiblingsIcon.classList.remove('rotate-180')
+            }
+        }
+    }
+}
+
 const showFooterAccordionHome1 = () => {
     const searchAccordion = document.getElementById('searchAccordion')
+    const searchAccordionIcon = document.getElementById('searchAccordionIcon');
 
-    //addHidden(searchAccordion)
-    searchAccordion.classList.toggle('hidden')
+    addHiddenFooterNav(searchAccordion)
+    searchAccordion.classList.toggle('max-h-96')
+    searchAccordionIcon.classList.toggle('rotate-180')
 }
 
 const showFooterAccordionHome2 = () => {
     const QuickLinksAccordion = document.getElementById('QuickLinksAccordion')
+    const QuickLinkAccordionIcon = document.getElementById('QuickLinkAccordionIcon');
 
-    //addHidden(QuickLinksAccordion)
-    QuickLinksAccordion.classList.toggle('hidden')
+    addHiddenFooterNav(QuickLinksAccordion)
+    QuickLinksAccordion.classList.toggle('max-h-96')
+    QuickLinkAccordionIcon.classList.toggle('rotate-180')
 }
 
 const showFooterAccordionHome3 = () => {
     const DiscoverAccordion = document.getElementById('DiscoverAccordion')
+    const DiscoverAccordionIcon = document.getElementById('DiscoverAccordionIcon');
 
-    //addHidden(DiscoverAccordion)
-    DiscoverAccordion.classList.toggle('hidden')
+    addHiddenFooterNav(DiscoverAccordion)
+    DiscoverAccordion.classList.toggle('max-h-96')
+    DiscoverAccordionIcon.classList.toggle('rotate-180')
+}
+
+//lisitng page
+const showFooterAccordionListing1 = () => {
+    const searchAccordion2 = document.getElementById('searchAccordion2')
+    const searchAccordionIcon2 = document.getElementById('searchAccordionIcon2');
+
+    addHiddenFooterNav(searchAccordion2)
+    searchAccordion2.classList.toggle('max-h-96')
+    searchAccordionIcon2.classList.toggle('rotate-180')
+}
+
+const showFooterAccordionListing2 = () => {
+    const QuickLinksAccordion2 = document.getElementById('QuickLinksAccordion2')
+    const QuickLinkAccordionIcon2 = document.getElementById('QuickLinkAccordionIcon2');
+
+    addHiddenFooterNav(QuickLinksAccordion2)
+    QuickLinksAccordion2.classList.toggle('max-h-96')
+    QuickLinkAccordionIcon2.classList.toggle('rotate-180')
+}
+
+const showFooterAccordionListing3 = () => {
+    const DiscoverAccordion2 = document.getElementById('DiscoverAccordion2')
+    const DiscoverAccordionIcon2 = document.getElementById('DiscoverAccordionIcon2');
+
+    addHiddenFooterNav(DiscoverAccordion2)
+    DiscoverAccordion2.classList.toggle('max-h-96')
+    DiscoverAccordionIcon2.classList.toggle('rotate-180')
 }

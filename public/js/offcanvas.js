@@ -9,10 +9,9 @@ const showMenu = () => {
         document.getElementById('body').classList.add('overflow-hidden')
     }
 
-    if (mainMenuHome.classList.contains('scale-x-0')) {
-        mainMenuHome.classList.add('scale-x-100')
-        mainMenuHome.classList.remove('scale-x-0')
-        mainMenuHome.classList.remove('w-0')
+    if (mainMenuHome.classList.contains('max-w-0')) {
+        mainMenuHome.classList.add('max-w-screen-sm')
+        mainMenuHome.classList.remove('max-w-0')
     }
 }
 
@@ -23,10 +22,9 @@ const hideMenu = () => {
     menuOffcanvas.classList.add('invisible')
     document.getElementById('body').classList.remove('overflow-hidden')
 
-    if (mainMenuHome.classList.contains('scale-x-100')) {
-        mainMenuHome.classList.add('scale-x-0')
-        mainMenuHome.classList.remove('scale-x-100')
-        mainMenuHome.classList.add('w-0')
+    if (mainMenuHome.classList.contains('max-w-screen-sm')) {
+        mainMenuHome.classList.add('max-w-0')
+        mainMenuHome.classList.remove('max-w-screen-sm')
     }
 }
 
@@ -39,10 +37,9 @@ const showMenu2 = () => {
         document.getElementById('body2').classList.add('overflow-hidden')
     }
 
-    if (mainMenuListing.classList.contains('scale-x-0')) {
-        mainMenuListing.classList.add('scale-x-100')
-        mainMenuListing.classList.remove('scale-x-0')
-        mainMenuListing.classList.remove('w-0')
+    if (mainMenuListing.classList.contains('max-w-0')) {
+        mainMenuListing.classList.add('max-w-screen-sm')
+        mainMenuListing.classList.remove('max-w-0')
     }
 }
 
@@ -53,10 +50,9 @@ const hideMenu2 = () => {
     menuOffcanvas2.classList.add('invisible')
     document.getElementById('body2').classList.remove('overflow-hidden')
 
-    if (mainMenuListing.classList.contains('scale-x-100')) {
-        mainMenuListing.classList.add('scale-x-0')
-        mainMenuListing.classList.remove('scale-x-100')
-        mainMenuListing.classList.add('w-0')
+    if (mainMenuListing.classList.contains('max-w-screen-sm')) {
+        mainMenuListing.classList.add('max-w-0')
+        mainMenuListing.classList.remove('max-w-screen-sm')
     }
 }
 
@@ -72,10 +68,9 @@ const showFilterOffcanvas = () => {
         document.getElementById('body2').classList.add('overflow-hidden')
     }
 
-    if (filterOffCan.classList.contains('scale-x-0')) {
-        filterOffCan.classList.add('scale-x-100')
-        filterOffCan.classList.remove('scale-x-0')
-        filterOffCan.classList.remove('w-0')
+    if (filterOffCan.classList.contains('max-w-0')) {
+        filterOffCan.classList.add('max-w-screen-sm')
+        filterOffCan.classList.remove('max-w-0')
     }
 }
 
@@ -86,9 +81,8 @@ const hideFilterOffcanvas = () => {
     filterOffcanvas.classList.add('invisible')
     document.getElementById('body2').classList.remove('overflow-hidden')
 
-    if (filterOffCan.classList.contains('scale-x-100')) {
-        filterOffCan.classList.add('scale-x-0')
-        filterOffCan.classList.remove('scale-x-100')
-        filterOffCan.classList.add('w-0')
+    if (filterOffCan.classList.contains('max-w-screen-sm')) {
+        filterOffCan.classList.add('max-w-0')
+        filterOffCan.classList.remove('max-w-screen-sm')
     }
 }
