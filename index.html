@@ -19,7 +19,7 @@
             <!--navigations for larger screens-->
             <nav class="text-white flex items-center justify-between mb-[130px]">
                 <div class="lg:hidden block">
-                    <img class="cursor-pointer" onclick="showMenu()" src="/public/images/nav-icon.png" alt="">
+                    <img class="cursor-pointer" onclick="showMenu()" src="/public/images/nav-icon (2).png" alt="">
                 </div>
                 <a href="index.html" class="flex items-center">
                     <img src="/public/images/icon.png" alt="">
@@ -31,12 +31,13 @@
                         </li>
                         <li class="px-2 mx-2 pb-[11px]">
                             <div class="flex items-center justify-between cursor-pointer dropDownBtn"
-                                onclick="showListingDropDown()" id="listingBtn">
-                                <p class="dropDownBtn">Listings</p>
+                                onclick="showTopNavDropDowns(event)" data-dropdown="listingDropDown1">
+                                <p class="dropDownBtn" data-dropdown="listingDropDown1">Listings</p>
                                 <svg class="w-4 h-4 ml-2 dropDownBtn" aria-hidden="true" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    data-dropdown="listingDropDown1">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
+                                        d="M19 9l-7 7-7-7" data-dropdown="listingDropDown1"></path>
                                 </svg>
                             </div>
                             <div id="listingDropDown1"
@@ -65,12 +66,13 @@
                         </li>
                         <li class="px-2 mx-2 pb-[11px]">
                             <div class="flex items-center justify-between cursor-pointer dropDownBtn"
-                                onclick="showPropertyDropDown()" id="">
-                                <p class="dropDownBtn">Property</p>
+                                onclick="showTopNavDropDowns(event)" data-dropdown="propertyDropDown1">
+                                <p class="dropDownBtn" data-dropdown="propertyDropDown1">Property</p>
                                 <svg class="w-4 h-4 ml-2 dropDownBtn" aria-hidden="true" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    data-dropdown="propertyDropDown1">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
+                                        d="M19 9l-7 7-7-7" data-dropdown="propertyDropDown1"></path>
                                 </svg>
                             </div>
                             <div id="propertyDropDown1"
@@ -99,12 +101,13 @@
                         <li class="px-2 mx-2"><a href="" class="">Blog</a></li>
                         <li class="px-2 mx-2 pb-[11px]">
                             <div class="flex items-center justify-between cursor-pointer dropDownBtn"
-                                onclick="showPagesDropDown()" id="pagesBtn">
-                                <p class="dropDownBtn">Pages</p>
+                                onclick="showTopNavDropDowns(event)" data-dropdown="pagesDropDown1">
+                                <p class="dropDownBtn" data-dropdown="pagesDropDown1">Pages</p>
                                 <svg class="w-4 h-4 ml-2 dropDownBtn" aria-hidden="true" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    data-dropdown="pagesDropDown1">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
+                                        d="M19 9l-7 7-7-7" data-dropdown="pagesDropDown1"></path>
                                 </svg>
                             </div>
                             <div id="pagesDropDown1"
@@ -168,14 +171,20 @@
                                     </a>
                                 </li>
                                 <li class="px-[30px] py-[20px] border-l-[2px] border-white cursor-pointer navAccordions"
-                                    onclick="showListingAccordion()">
-                                    <div class="flex items-center justify-between">
-                                        <p class="">Listing</p>
+                                    onclick="showSideNavAccordions(event)" data-accordion="listingDropDown2"
+                                    data-accordionicon="ListingAccordionIcon1">
+                                    <div class="flex items-center justify-between" data-accordion="listingDropDown2"
+                                        data-accordionicon="ListingAccordionIcon1">
+                                        <p class="" data-accordion="listingDropDown2"
+                                            data-accordionicon="ListingAccordionIcon1">Listing</p>
                                         <svg class="w-4 h-4 ml-2 icon icon-chevron-right origin-center transition-all duration-300 ease-in-out"
                                             id="ListingAccordionIcon1" viewBox="0 0 24 24" viewBox="0 0 24 24"
-                                            aria-hidden="true">
+                                            aria-hidden="true" data-accordion="listingDropDown2"
+                                            data-accordionicon="ListingAccordionIcon1">
                                             <path
-                                                d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z" />
+                                                d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z"
+                                                data-accordion="listingDropDown2"
+                                                data-accordionicon="ListingAccordionIcon1" />
                                         </svg>
                                     </div>
                                     <div id="listingDropDown2"
@@ -205,14 +214,20 @@
                                     </div>
                                 </li>
                                 <li class="px-[30px] py-[20px] border-l-[2px] border-white cursor-pointer navAccordions"
-                                    onclick="showPropertyAccordion()">
-                                    <div class="flex items-center justify-between">
-                                        <p class="">Property</p>
+                                    onclick="showSideNavAccordions(event)" data-accordion="propertyDropDown2"
+                                    data-accordionicon="PropertyAccordionIcon1">
+                                    <div class="flex items-center justify-between" data-accordion="propertyDropDown2"
+                                        data-accordionicon="PropertyAccordionIcon1">
+                                        <p class="" data-accordion="propertyDropDown2"
+                                            data-accordionicon="PropertyAccordionIcon1">Property</p>
                                         <svg class="w-4 h-4 ml-2 icon icon-chevron-right origin-center transition-all duration-300 ease-in-out"
-                                        id="PropertyAccordionIcon1" viewBox="0 0 24 24"
-                                            viewBox="0 0 24 24" aria-hidden="true">
+                                            id="PropertyAccordionIcon1" viewBox="0 0 24 24" viewBox="0 0 24 24"
+                                            aria-hidden="true" data-accordion="propertyDropDown2"
+                                            data-accordionicon="PropertyAccordionIcon1">
                                             <path
-                                                d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z" />
+                                                d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z"
+                                                data-accordion="propertyDropDown2"
+                                                data-accordionicon="PropertyAccordionIcon1" />
                                         </svg>
                                     </div>
                                     <div id="propertyDropDown2"
@@ -244,13 +259,20 @@
                                 </li>
 
                                 <li class="px-[30px] py-[20px] border-l-[2px] border-white cursor-pointer navAccordions"
-                                    onclick="showPagesAccordion()">
-                                    <div class="flex items-center justify-between">
-                                        <p class="">Pages</p>
-                                        <svg class="w-4 h-4 ml-2 icon icon-chevron-right origin-center transition-all duration-300 ease-in-out" id="pagesAccordionIcon1" viewBox="0 0 24 24" class="icon icon-chevron-right"
-                                            viewBox="0 0 24 24" aria-hidden="true">
+                                    onclick="showSideNavAccordions(event)" data-accordion="pagesDropDown2"
+                                    data-accordionicon="pagesAccordionIcon1">
+                                    <div class="flex items-center justify-between" data-accordion="pagesDropDown2"
+                                        data-accordionicon="pagesAccordionIcon1">
+                                        <p class="" data-accordion="pagesDropDown2"
+                                            data-accordionicon="pagesAccordionIcon1">Pages</p>
+                                        <svg class="w-4 h-4 ml-2 icon icon-chevron-right origin-center transition-all duration-300 ease-in-out"
+                                            id="pagesAccordionIcon1" viewBox="0 0 24 24" viewBox="0 0 24 24"
+                                            aria-hidden="true" data-accordion="pagesDropDown2"
+                                            data-accordionicon="pagesAccordionIcon1">
                                             <path
-                                                d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z" />
+                                                d="M18.629 15.997l-7.083-7.081L13.462 7l8.997 8.997L13.457 25l-1.916-1.916z"
+                                                data-accordion="pagesDropDown2"
+                                                data-accordionicon="pagesAccordionIcon1" />
                                         </svg>
                                     </div>
                                     <div id="pagesDropDown2"
@@ -1558,16 +1580,22 @@
                 <!--Footer links for smaller screens-->
                 <div class="md:hidden block sm:mt-[-70px] mt-5">
                     <div class="mb-[10px]">
-                        <div class="flex items-center mb-[10px]" onclick="showFooterAccordionHome1()">
+                        <div class="flex items-center mb-[10px]" onclick="showFooterNavAccordions(event)"
+                            data-footeraccordion="searchAccordion" data-footeraccordionicon="searchAccordionIcon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 mr-[10px] origin-center rotate-180 transition-all duration-300 ease-in-out" id="searchAccordionIcon">
+                                class="w-5 h-5 mr-[10px] origin-center rotate-180 transition-all duration-300 ease-in-out"
+                                id="searchAccordionIcon" data-footeraccordion="searchAccordion"
+                                data-footeraccordionicon="searchAccordionIcon">
                                 <path fill-rule="evenodd"
                                     d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                    clip-rule="evenodd" />
+                                    clip-rule="evenodd" data-footeraccordion="searchAccordion"
+                                    data-footeraccordionicon="searchAccordionIcon" />
                             </svg>
-                            <p class="text-[15px] font-semibold">Popular Search</p>
+                            <p class="text-[15px] font-semibold" data-footeraccordion="searchAccordion"
+                                data-footeraccordionicon="searchAccordionIcon">Popular Search</p>
                         </div>
-                        <ul class="text-sm text-[#BEBDBD] ml-[30px] transition-[max-height] transition-all duration-300 ease-in-out overflow-hidden max-h-0 max-h-96" id="searchAccordion">
+                        <ul class="text-sm text-[#BEBDBD] ml-[30px] transition-[max-height] transition-all duration-300 ease-in-out overflow-hidden max-h-0 max-h-96"
+                            id="searchAccordion">
                             <li class="mb-[20px]"><a href="">Apartment for Rent</a></li>
                             <li class="mb-[20px]"><a href="">Apartment Low to hide</a></li>
                             <li class="mb-[20px]"><a href="">Offices for Buy</a></li>
@@ -1575,16 +1603,22 @@
                         </ul>
                     </div>
                     <div class="mb-[10px]">
-                        <div class="flex items-center mb-[10px]" onclick="showFooterAccordionHome2()">
+                        <div class="flex items-center mb-[10px]" onclick="showFooterNavAccordions(event)"
+                            data-footeraccordion="QuickLinksAccordion" data-footeraccordionicon="QuickLinksAccordionIcon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 mr-[10px] origin-center transition-all duration-300 ease-in-out" id="QuickLinkAccordionIcon">
+                                class="w-5 h-5 mr-[10px] origin-center transition-all duration-300 ease-in-out"
+                                id="QuickLinksAccordionIcon" data-footeraccordion="QuickLinksAccordion"
+                                data-footeraccordionicon="QuickLinksAccordionIcon">
                                 <path fill-rule="evenodd"
                                     d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                    clip-rule="evenodd" />
+                                    clip-rule="evenodd" data-footeraccordion="QuickLinksAccordion"
+                                    data-footeraccordionicon="QuickLinksAccordionIcon" />
                             </svg>
-                            <p class="text-[15px] font-semibold">Quick Links</p>
+                            <p class="text-[15px] font-semibold" data-footeraccordion="QuickLinksAccordion"
+                                data-footeraccordionicon="QuickLinksAccordionIcon">Quick Links</p>
                         </div>
-                        <ul class="text-sm text-[#BEBDBD] ml-[30px] transition-[max-height] transition-all duration-300 ease-in-out overflow-hidden max-h-0" id="QuickLinksAccordion">
+                        <ul class="text-sm text-[#BEBDBD] ml-[30px] transition-[max-height] transition-all duration-300 ease-in-out overflow-hidden max-h-0"
+                            id="QuickLinksAccordion">
                             <li class="mb-5"><a href="#">Terms of Use</a></li>
                             <li class="mb-5"><a href="#">Privacy Policy</a></li>
                             <li class="mb-5"><a href="#">Pricing Plans</a></li>
@@ -1595,16 +1629,22 @@
                         </ul>
                     </div>
                     <div class="mb-[10px]">
-                        <div class="flex items-center mb-[10px]" onclick="showFooterAccordionHome3()">
+                        <div class="flex items-center mb-[10px]" onclick="showFooterNavAccordions(event)"
+                            data-footeraccordion="DiscoverAccordion" data-footeraccordionicon="DiscoverAccordionIcon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 mr-[10px] origin-center transition-all duration-300 ease-in-out" id="DiscoverAccordionIcon">
+                                class="w-5 h-5 mr-[10px] origin-center transition-all duration-300 ease-in-out"
+                                id="DiscoverAccordionIcon" data-footeraccordion="DiscoverAccordion"
+                                data-footeraccordionicon="DiscoverAccordionIcon">
                                 <path fill-rule="evenodd"
                                     d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                    clip-rule="evenodd" />
+                                    clip-rule="evenodd" data-footeraccordion="DiscoverAccordion"
+                                    data-footeraccordionicon="DiscoverAccordionIcon" />
                             </svg>
-                            <p class="text-[15px] font-semibold">Discover</p>
+                            <p class="text-[15px] font-semibold" data-footeraccordion="DiscoverAccordion"
+                                data-footeraccordionicon="DiscoverAccordionIcon">Discover</p>
                         </div>
-                        <ul class="text-sm text-[#BEBDBD] ml-[30px] transition-[max-height] transition-all duration-300 ease-in-out overflow-hidden max-h-0" id="DiscoverAccordion">
+                        <ul class="text-sm text-[#BEBDBD] ml-[30px] transition-[max-height] transition-all duration-300 ease-in-out overflow-hidden max-h-0"
+                            id="DiscoverAccordion">
                             <li class="mb-5"><a href="#">Miami</a></li>
                             <li class="mb-5"><a href="#">Los Angeles</a></li>
                             <li class="mb-5"><a href="#">Chicago</a></li>
