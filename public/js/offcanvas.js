@@ -68,7 +68,10 @@ const showFilterOffcanvas = () => {
         document.getElementById('body2').classList.add('overflow-hidden')
     }
 
-    filterOffCan.classList.add('max-w-screen-sm')
+    if (filterOffCan.classList.contains('max-w-0')) {
+        filterOffCan.classList.add('max-w-screen-sm')
+        filterOffCan.classList.remove('max-w-0')
+    }
 }
 
 const hideFilterOffcanvas = () => {
@@ -78,5 +81,8 @@ const hideFilterOffcanvas = () => {
     filterOffcanvas.classList.add('invisible')
     document.getElementById('body2').classList.remove('overflow-hidden')
 
-    filterOffCan.classList.remove('max-w-screen-sm')
+    if (filterOffCan.classList.contains('max-w-screen-sm')) {
+        filterOffCan.classList.add('max-w-0')
+        filterOffCan.classList.remove('max-w-screen-sm')
+    }
 }
