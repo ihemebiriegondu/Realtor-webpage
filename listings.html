@@ -385,7 +385,7 @@
                     <p class="text-[15px] font-semibold mb-5">Price Range</p>
 
                     <div class="w-full mb-4 slider relative" id="sliderComp2">
-                        <range-selector class="w-full flex static" id="rangeSelector2" min-label="Minimum"
+                        <range-selector class="w-full flex static mx-auto id="rangeSelector2" min-label="Minimum"
                             max-label="Maximum" min-range="1000" max-range="100000" inputs-for-labels hide-legend
                             hide-label event-name-to-emit-on-change="my-custom-range-changed-event2"
                             slider-color="#181A20" slider-height="2px" circle-color="white"
@@ -570,7 +570,7 @@
                         </div>
                         <p class="text-[15px] font-semibold mb-5">Price Range</p>
                         <div class="w-full mb-4 slider relative" id="sliderComp">
-                            <range-selector class="w-full flex static" id="rangeSelector1" min-label="Minimum"
+                            <range-selector class="w-full flex static mx-auto" id="rangeSelector1" min-label="Minimum"
                                 max-label="Maximum" min-range="1000" max-range="100000" inputs-for-labels hide-legend
                                 hide-label event-name-to-emit-on-change="my-custom-range-changed-event"
                                 slider-color="#181A20" slider-height="2px" circle-color="white"
@@ -580,13 +580,13 @@
                         <div class="flex items-center justify-between w-full mb-[30px]">
                             <div class="border border-[#DDDDDD] rounded-[8px] p-[12px] text-sm w-full flex">
                                 <span class="mr-3 block">$</span>
-                                <input type="number" placeholder="min." id="minRangeValue"
+                                <input type="number" min="1000" placeholder="min." id="minRangeValue"
                                     class="bg-transparent outline-none text-sm w-full">
                             </div>
                             <p class="text-[#181A20] text-3xl mx-px">-</p>
                             <div class="border border-[#DDDDDD] rounded-[8px] p-[12px] text-sm w-full flex">
                                 <span class="mr-3 block">$</span>
-                                <input type="number" placeholder="max." id="maxRangeValue"
+                                <input type="number" max="100000" placeholder="max." id="maxRangeValue"
                                     class="bg-transparent outline-none text-sm w-full">
                             </div>
                         </div>
