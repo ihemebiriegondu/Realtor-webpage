@@ -11,7 +11,7 @@ window.addEventListener('my-custom-range-changed-event', (e) => {
 
 window.addEventListener('my-custom-range-changed-event2', (e) => { 
     const data = e.detail; 
-    console.log(data)
+    //console.log(data)
 
     const minRangeValue = document.getElementById('minRangeValue2')
     const maxRangeValue = document.getElementById('maxRangeValue2')
